@@ -1,0 +1,61 @@
+    <footer class="site-footer">
+        <div class='container'>
+            <div class='footer-container'>
+                <h3>Alamat</h3>
+                <p>
+                    45-M Floor M, Jalan PJU 5/21, The Strands Kota Damansara,
+                    47810 Petaling Jaya, Selangor.
+                </p>
+
+                </br>
+
+                <h3>© DMC FINCAP SDN BHD (1414444-W). ALL RIGHTS RESERVED</h3>
+                <p>
+                    is regulated by Kementerian Pembangunan Kerajaan Tempatan
+                    (licensee providing digital services) under MY Licence Serial
+                    Number XXXXX in Malaysia.
+                </p>
+            </div>
+
+            <div class='footer-container'>
+                <h3>Nombor Telefon</h3>
+                <p>03 - 8966 3700</p>
+                </br>
+                <h3>Emel</h3>
+                <p>info@dmcfincap.com</p>
+            </div>
+
+            <div class='footer-container'>
+                <h3>Dibawah penyeliaan</h3>
+
+                <h3>Ikuti kami</h3>
+                <div class="social-container">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/fb.png" alt="">
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/linkedin.png" alt="">
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/youtube.png" alt="">
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/instagram.png" alt="">
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/tiktok.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/counter.min.js"></script>
+    <script src="js/scripts.js"></script>
+    </body>
+
+    </html>

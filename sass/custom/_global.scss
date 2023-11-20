@@ -1,0 +1,72 @@
+.post,
+.page {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-family: 'Matter', sans-serif;
+}
+
+body,
+p,
+a,
+span,
+li {
+    font-family: 'Matter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #282828;
+
+    &:visited {
+        color: #282828;
+    }
+
+    &:hover {
+        color: #282828;
+    }
+}
+
+.container {
+    margin: 24px 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 1400px) {
+        max-width: 980px;
+    }
+
+    @media(max-width: 1000px) {
+        margin: 24px 4%;
+    }
+
+    @media(max-width: 968px) {}
+}
+
+a.btn-main {
+    background-color: #f3b126;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all .25s;
+
+    &:hover {
+        background-color: #dd9d12;
+    }
+
+    &.xl {
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+}

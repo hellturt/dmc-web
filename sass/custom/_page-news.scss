@@ -1,0 +1,210 @@
+.main-news {
+    .container {}
+
+    section {
+        .container {
+            margin-top: 0;
+            height: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    section.header {
+        margin-top: 90px;
+        background-color: #F3B126;
+
+        .container {
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .details-container {
+            position: relative;
+            background-color: #e7ffd7;
+            box-sizing: border-box;
+            padding: 10px 30px;
+            border-radius: 20px;
+            width: 100%;
+            margin-bottom: 200px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+
+        }
+
+        .content {
+            position: relative;
+            width: 70%;
+            margin: 50px 0;
+            z-index: 2;
+        }
+
+        ul {
+            padding: 0;
+            margin-left: 16px;
+        }
+
+        img {
+            position: absolute;
+            z-index: 1;
+            right: 3%;
+            bottom: 0;
+            height: 90%;
+            width: auto;
+        }
+    }
+
+    section.section1 {
+        color: #fff;
+        position: relative;
+        top: -160px;
+
+        .container {
+            background-color: #1b1464;
+            border-radius: 20px;
+            padding: 30px 30px 10px;
+            flex-direction: column;
+        }
+
+        .img-container {
+            background-color: #282828;
+            background-position: center bottom;
+            background-size: cover;
+            width: 100%;
+            color: #fff;
+            height: 25vw;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+
+            h2 {
+                width: 40%;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                margin: 0;
+                font-size: 2.5em;
+                font-weight: 400;
+                line-height: 1.2;
+            }
+        }
+
+        .details-container {
+            font-size: 18px;
+
+            ul {
+                padding: 0;
+                margin-left: 16px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+    }
+
+    section.section2 {
+        margin-bottom: 100px;
+
+        .container {
+            gap: 10%;
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 60%;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .counter {
+                background-color: #fef3e4;
+                width: 80%;
+                padding: 3rem 2rem;
+                text-align: center;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                color: #343f52;
+
+                span {
+                    font-size: 2.1em;
+                    line-height: 1;
+                }
+
+                p {
+                    margin: 10px 0 0;
+                }
+            }
+        }
+
+        .review-container {
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 992px) {
+        section.header {
+            img {
+                opacity: .5;
+            }
+        }
+
+        section.section1 {
+            .img-container {
+                height: 300px;
+
+                h2 {
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    padding: 20px;
+                }
+            }
+
+            .details-container {
+                ul {
+                    grid-template-columns: 100%;
+                }
+            }
+        }
+
+        section.section2 {
+            margin-top: -100px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        section.section2 {
+            .container {
+                flex-direction: column;
+            }
+
+            .img-container,
+            .review-container {
+                width: 100%;
+            }
+
+            .img-container {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        section.header {
+            .content {
+                width: 100%;
+            }
+
+            img {
+                height: auto;
+                width: 70%;
+            }
+        }
+    }
+}

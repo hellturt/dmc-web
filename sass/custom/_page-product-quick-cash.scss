@@ -1,0 +1,194 @@
+.main-quick-cash {
+    .container {
+        padding: 0 2%;
+    }
+
+    section.header {
+        position: relative;
+        margin-top: 90px;
+        background-color: #282828;
+        height: 550px;
+        background-size: cover;
+        background-position: center;
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .content {
+            width: 40%;
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        h1 {
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #2e318b;
+            opacity: .5;
+        }
+    }
+
+    section.quick-cash-content {
+        .container {
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            text-align: left;
+            margin: 0 0 50px;
+            width: 100%;
+        }
+
+        .single-step {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 50px;
+
+            div:first-child {
+                width: 50px;
+                font-size: 3em;
+                line-height: 0.8;
+                color: #1b1464;
+                font-weight: bold;
+                position: relative;
+            }
+
+            h2 {
+                padding: 10px;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 400;
+                background-color: #ecf3f3;
+            }
+
+            p {
+                margin: 5px 0;
+                padding-left: 20px;
+                position: relative;
+            }
+
+            p::before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                left: 0;
+                top: 8px;
+                background-color: #282828;
+            }
+
+            img {
+                width: 20px;
+                filter: contrast(.5);
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+        }
+
+        .single-step:nth-child(4) {
+            margin-bottom: 20px;
+        }
+
+        .single-step:nth-child(6) {
+            p {
+                padding-left: 0;
+            }
+
+            p::before {
+                content: none;
+            }
+        }
+
+        .step-highlight {
+            background-color: #1b1464;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 50px;
+            display: flex;
+            gap: 40px;
+            border-radius: 40px;
+
+            .step-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                width: 70%;
+            }
+
+            .card {
+                background-color: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                text-align: center;
+
+                img {
+                    margin-top: 40px;
+                }
+            }
+
+            .content {
+                width: 30%;
+                color: #fff;
+
+                p {
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 2em;
+                    color: #F3B126;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        section.header {
+            .content {
+                width: 80%;
+            }
+        }
+
+        section.quick-cash-content {
+            .step-highlight {
+                flex-direction: column;
+
+                .step-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 100%;
+                }
+
+                .card img {
+                    max-width: 200px;
+                }
+
+                .content {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
