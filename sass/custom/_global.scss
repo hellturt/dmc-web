@@ -35,6 +35,10 @@ a {
     }
 }
 
+body.pause {
+    overflow: hidden;
+}
+
 .container {
     margin: 24px 10%;
     margin-left: auto;

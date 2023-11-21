@@ -73,14 +73,14 @@ include 'component/header.php';
                         <h3>Mat Yusof Mat Chik</h3>
                         <p>Penasihat Kewangan</p>
                     </div>
-                    <img src="img/leader/DatoHajiZazaliHaron.jpg" alt="">
+                    <img src="img/leader/MatYusofMatChik.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
                         <h3>Nik Khairolazuwan</h3>
                         <p>Pengurus Besar</p>
                     </div>
-                    <img src="img/leader/SapieiAbidin.jpg" alt="">
+                    <img src="img/leader/NikKhairolazuman.jpg" alt="">
                 </div>
             </div>
 
@@ -88,45 +88,45 @@ include 'component/header.php';
             <div class="group">
                 <div class="single">
                     <div class="details">
-                        <h3>Dato' Zazali Haron</h3>
-                        <p>Pengerusi</p>
+                        <h3>Mukhlis Ramli</h3>
+                        <p>Pengurus Kanan, Pembangunan Perisian IT</p>
                     </div>
-                    <img src="img/leader/DatoHajiZazaliHaron.jpg" alt="">
+                    <img src="img/leader/MukhlisBinRamli.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Sapiei Abidin</h3>
-                        <p>Ketua Pegawai Eksekutif</p>
+                        <h3>Mohd Hamizane Ariffin</h3>
+                        <p>Pengurus Operasi</p>
                     </div>
-                    <img src="img/leader/SapieiAbidin.jpg" alt="">
+                    <img src="img/leader/MohdHamizaneMohdAriffin.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Mat Yusof Mat Chik</h3>
-                        <p>Penasihat Kewangan</p>
+                        <h3>Muhammad Asrul</h3>
+                        <p>Pengurus Kewangan</p>
                     </div>
-                    <img src="img/leader/DatoHajiZazaliHaron.jpg" alt="">
+                    <img src="img/leader/MuhammadAsrulCheMat.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Nik Khairolazuwan</h3>
-                        <p>Pengurus Besar</p>
+                        <h3>Hema Priya</h3>
+                        <p>Pengurus Sumber Manusia & Pentadbiran</p>
                     </div>
-                    <img src="img/leader/SapieiAbidin.jpg" alt="">
+                    <img src="img/leader/HemaPriya.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Nik Khairolazuwan</h3>
-                        <p>Pengurus Besar</p>
+                        <h3>Aini Hafiza Hussin</h3>
+                        <p>Pengurus Pemasaran Digital & Perhubungan Awam</p>
                     </div>
-                    <img src="img/leader/SapieiAbidin.jpg" alt="">
+                    <img src="img/leader/AiniHafiza.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Nik Khairolazuwan</h3>
-                        <p>Pengurus Besar</p>
+                        <h3>Nurul Fadzlinda Ibrahim</h3>
+                        <p>Penasihat Undang-Undang & Setiausaha Syarikat</p>
                     </div>
-                    <img src="img/leader/SapieiAbidin.jpg" alt="">
+                    <img src="img/leader/Linda.jpg" alt="">
                 </div>
             </div>
         </div>

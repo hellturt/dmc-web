@@ -747,6 +747,10 @@ a:hover {
 	color: #282828;
 }
 
+body.pause {
+	overflow: hidden;
+}
+
 .container {
 	margin: 24px 10%;
 	margin-left: auto;
@@ -1267,6 +1271,66 @@ a.btn-main.xl {
 	opacity: .2;
 }
 
+.main-home .modal-container {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(5px);
+}
+
+.main-home .modal-container.active {
+	display: flex;
+}
+
+.main-home .modal-container .modal-content-container {
+	margin-left: 10%;
+	margin-right: 10%;
+	max-width: 600px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #fff;
+	position: relative;
+}
+
+.main-home .modal-container a {
+	display: block;
+}
+
+.main-home .modal-container img {
+	display: block;
+	border-radius: 14px;
+}
+
+.main-home .modal-container svg {
+	opacity: .2;
+}
+
+.main-home .modal-container button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	right: -20px;
+	top: -20px;
+	border: none;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 1;
+	border-radius: 50px;
+	font-size: 28px;
+	background-color: #f3b126;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 992px) {
 	.main-home section.cta-about {
 		margin-bottom: 60px;
@@ -1359,6 +1423,9 @@ a.btn-main.xl {
 		width: 90%;
 		border-radius: 0 0 20px 20px;
 		background-position: center top;
+	}
+	.main-home .modal-container .modal-content-container {
+		padding: 10px;
 	}
 }
 

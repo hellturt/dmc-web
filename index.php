@@ -5,6 +5,15 @@ include 'component/header.php';
 ?>
 
 <main id="primary" class="site-main main-home">
+    <div class="modal-container">
+        <div class="modal-content-container">
+            <button id="modal-close" type="button">
+                <iconify-icon icon="ep:close-bold"></iconify-icon>
+            </button>
+            <a href="registration"><img src="img/poster.jpeg" alt=""></a>
+        </div>
+    </div>
+
     <section class='cta-secondHope'>
         <div class='container'>
             <div class='column column-content'>
@@ -99,9 +108,5 @@ include 'component/header.php';
         <img class='dots-bg' src="img/dots.svg" alt="">
     </section>
 </main>
-
-<script>
-    $(document).ready(function() {});
-</script>
 
 <?php include 'component/footer.php'; ?>

@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    // modal
+    let closeState = sessionStorage.getItem("modal-close");
+    if (!closeState) {
+        $('.modal-container').addClass('active');
+        $('body').addClass('pause');
+    }
+
+    $('#modal-close').click(function () {
+        sessionStorage.setItem("modal-close", true);
+        $('.modal-container').hide()
+        $('body').removeClass('pause');
+    })
 
     // Career Form
     $('#email, #name, #tel, #interest, #message').click(function () {
@@ -60,8 +72,6 @@ $(document).ready(function () {
     });
 
 
-
-
     // Scroll reveal
     ScrollReveal({
         duration: 600,
@@ -91,6 +101,8 @@ $(document).ready(function () {
 
     // GLOBAL
     ScrollReveal().reveal('.site-header', slideDown)
+    ScrollReveal().reveal('.modal-container', slideUp)
+
 
     // Home
     ScrollReveal().reveal('.cta-secondHope .column-content', slideRight)
