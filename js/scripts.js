@@ -1,4 +1,67 @@
 $(document).ready(function () {
+
+    // Career Form
+    $('#email, #name, #tel, #interest, #message').click(function () {
+        $('.form-alert-container').removeClass('active success fail alert');
+        $('.form-alert-container').empty();
+    })
+
+    $('#sendEmail').click(function () {
+        // Collect form data
+        var email = $('#email').val();
+        var name = $('#name').val();
+        var phone = $('#tel').val();
+        var subject = 'DMC FinCap Web Career Form';
+        var interest = $('#interest').val();
+        var message = $('#message').val();
+
+        if (!(email && name && phone && subject && message)) {
+            $('.form-alert-container').append('Sila isi semua maklumat yang diperlukan.')
+            $('.form-alert-container').addClass('active alert')
+        } else {
+            var compiledMessage = `
+                Message from DMC Web Career<br/><br/>
+                Name: ${name}<br/>
+                Email: ${email}<br/>
+                Phone No.: ${phone}<br/>
+                -------------------------<br/>
+                Interest in: ${interest}<br/>
+                Message: ${message}
+            `
+
+            // Send data to the server
+            $.post('send_email.php', {
+                email: email,
+                subject: subject,
+                message: compiledMessage
+            }, function (response) {
+                if (response === 'success') {
+                    // show success message
+                    $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
+                    $('.form-alert-container').addClass('active success')
+                    // clear form
+                    $('#email').val('');
+                    $('#name').val('');
+                    $('#tel').val('');
+                    $('#interest').val('');
+                    $('#message').val('');
+                } else {
+                    // show error message
+                    $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
+                    $('.form-alert-container').addClass('active fail')
+                }
+
+                setTimeout(() => {
+                    $('.form-alert-container').removeClass('active success fail alert');
+                    $('.form-alert-container').empty();
+                }, 6000);
+            });
+        }
+    });
+
+
+
+
     // Scroll reveal
     ScrollReveal({
         duration: 600,
