@@ -1927,7 +1927,7 @@ a.btn-main.xl {
 .main-career section.section-form .container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background-color: #EBEBE9;
+	background-color: #eeeeee;
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -1961,7 +1961,8 @@ a.btn-main.xl {
 }
 
 .main-career section.section-form form h2,
-.main-career section.section-form form textarea {
+.main-career section.section-form form textarea,
+.main-career section.section-form form .form-alert-container {
 	grid-column: 1 / -1;
 	font-weight: 400;
 }
@@ -1976,6 +1977,34 @@ a.btn-main.xl {
 
 .main-career section.section-form textarea {
 	border: 1px solid #aaa;
+}
+
+.main-career section.section-form .form-alert-container {
+	display: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.main-career section.section-form .form-alert-container.success {
+	color: #1e4620;
+	background-color: #edf7ed;
+	border: 1px solid rgba(30, 70, 32, 0.3);
+}
+
+.main-career section.section-form .form-alert-container.fail {
+	color: #5f2120;
+	background-color: #fdeded;
+	border: 1px solid rgba(95, 33, 32, 0.3);
+}
+
+.main-career section.section-form .form-alert-container.alert {
+	color: #663c00;
+	background-color: #fff4e5;
+	border: 1px solid rgba(102, 60, 0, 0.3);
+}
+
+.main-career section.section-form .form-alert-container.active {
+	display: block;
 }
 
 .main-career section.section-form button {

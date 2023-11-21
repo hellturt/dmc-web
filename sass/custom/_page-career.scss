@@ -167,7 +167,7 @@
         .container {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            background-color: #EBEBE9;
+            background-color: #eeeeee;
             border-radius: 20px;
             overflow: hidden;
         }
@@ -200,7 +200,8 @@
             gap: 20px;
 
             h2,
-            textarea {
+            textarea,
+            .form-alert-container {
                 grid-column: 1 / -1;
                 font-weight: 400;
             }
@@ -216,6 +217,34 @@
 
         textarea {
             border: 1px solid #aaa;
+        }
+
+        .form-alert-container {
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+
+            &.success {
+                color: rgb(30, 70, 32);
+                background-color: rgb(237, 247, 237);
+                border: 1px solid rgba(30, 70, 32, .3);
+            }
+
+            &.fail {
+                color: rgb(95, 33, 32);
+                background-color: rgb(253, 237, 237);
+                border: 1px solid rgba(95, 33, 32, .3);
+            }
+
+            &.alert {
+                color: rgb(102, 60, 0);
+                background-color: rgb(255, 244, 229);
+                border: 1px solid rgba(102, 60, 0, .3);
+            }
+        }
+
+        .form-alert-container.active {
+            display: block;
         }
 
         button {

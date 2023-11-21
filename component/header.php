@@ -26,7 +26,7 @@
         <div class="container">
             <div class="site-branding">
                 <a href="index" class="custom-logo-link" rel="home"><img width="320" height="60" src="img/logo.png" class="custom-logo" alt="DMC"></a>
-            </div><!-- .site-branding -->
+            </div>
 
             <nav id="site-navigation" class="main-navigation">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -50,6 +50,6 @@
                         <li class="menu-item"><a href="registration" target="_blank">Daftar Sekarang</a></li>
                     </ul>
                 </div>
-            </nav><!-- #site-navigation -->
+            </nav>
         </div>
     </header>

@@ -111,14 +111,15 @@ include 'component/header.php';
                 </h1>
             </div>
             <div class="form">
-                <form action="">
+                <form id="careerForm">
                     <h2>Kami ingin mendengar tentang anda</h2>
                     <input type="text" name="name" id="name" placeholder="Nama*" required>
                     <input type="text" name="interest" id="interest" placeholder="Berminat dalam*" required>
                     <input type="email" name="email" id="email" placeholder="Emel*" required>
                     <input type="tel" name="tel" id="tel" placeholder="No. Telefon*" required>
-                    <textarea name="" id="" cols="30" rows="10" required placeholder="Sila beritahu kami sedikit tentang anda, mengapa anda sesuai dan bagaimana anda mendengarnya tentang kami."></textarea>
-                    <button type="submit">Hantar</button>
+                    <textarea name="message" id="message" cols="30" rows="10" required placeholder="Sila beritahu kami sedikit tentang anda, mengapa anda sesuai dan bagaimana anda mendengarnya tentang kami."></textarea>
+                    <div class="form-alert-container"></div>
+                    <button type="button" id="sendEmail">Hantar</button>
                 </form>
             </div>
         </div>
@@ -127,6 +128,71 @@ include 'component/header.php';
 
 <script>
     $(document).ready(function() {
+
+        $('#email, #name, #tel, #interest, #message').click(function() {
+            $('.form-alert-container').removeClass('active success fail alert');
+            $('.form-alert-container').empty();
+        })
+
+        $('#sendEmail').click(function() {
+            // Collect form data
+            var to = $('#email').val();
+            var name = $('#name').val();
+            var phone = $('#tel').val();
+            var subject = 'DMC FinCap Web Career Form';
+            var interest = $('#interest').val();
+            var message = $('#message').val();
+
+            if (!(to && name && phone && subject && message)) {
+                $('.form-alert-container').append('Sila isi semua maklumat yang diperlukan.')
+                $('.form-alert-container').addClass('active alert')
+            } else {
+                var compiledMessage = `
+                    Message from DMC Web Career\n
+                    Name: ${name}\n
+                    Email: ${to}\n
+                    Phone No.: ${phone}\n
+                    -------------------------\n
+                    Interest in: ${interest}\n
+                    Message: ${message}\n
+                `
+
+                console.log({
+                    compiledMessage
+                })
+
+                // Send data to the server
+                $.post('send_email.php', {
+                    to: to,
+                    subject: subject,
+                    message: compiledMessage
+                }, function(response) {
+                    if (response === 'success') {
+                        // show success message
+                        $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
+                        $('.form-alert-container').addClass('active success')
+                        // clear form
+                        $('#email').val('');
+                        $('#name').val('');
+                        $('#tel').val('');
+                        $('#interest').val('');
+                        $('#message').val('');
+                    } else {
+                        // show error message
+                        $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
+                        $('.form-alert-container').addClass('active fail')
+                    }
+                });
+            }
+
+            setTimeout(() => {
+                $('.form-alert-container').removeClass('active success fail alert');
+                $('.form-alert-container').empty();
+            }, 6000);
+        });
+
+
+        // Carousel
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             responsive: {
