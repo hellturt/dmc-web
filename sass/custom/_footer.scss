@@ -31,6 +31,18 @@
         }
     }
 
+    .support-container {
+        display: flex;
+        gap: 16px;
+        margin: 10px 0 20px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+    }
+
     .social-container {
         a {
             width: 30px;

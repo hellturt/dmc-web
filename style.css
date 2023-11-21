@@ -925,6 +925,18 @@ a.btn-main.xl {
 	border-right: none;
 }
 
+.site-footer .support-container {
+	display: flex;
+	gap: 16px;
+	margin: 10px 0 20px;
+}
+
+.site-footer .support-container img {
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
 .site-footer .social-container a {
 	width: 30px;
 	opacity: .65;

@@ -27,6 +27,12 @@
 
             <div class='footer-container'>
                 <h3>Dibawah penyeliaan</h3>
+                <div class="support-container">
+                    <img src="img/support1.png" alt="">
+                    <img src="img/support2.png" alt="">
+                    <img src="img/support3.png" alt="">
+                    <img src="img/support4.png" alt="">
+                </div>
 
                 <h3>Ikuti kami</h3>
                 <div class="social-container">
