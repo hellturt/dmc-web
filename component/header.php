@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <title>DMC FinCap</title>
+    <title>DMC FinCap | <?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -28,7 +37,7 @@
                 <div class="menu-main-menu-container">
                     <ul id="primary-menu" class="menu nav-menu">
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/index") ? "current-menu-item" : "" ?>"><a href="index">Utama</a></li>
-                        <li class="menu-item"><a href="#">Produk</a>
+                        <li class="menu-item with-child"><a href="#">Produk</a>
                             <ul class="sub-menu">
                                 <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/secondHope") ? "current-menu-item" : "" ?>"><a href="secondHope">Second Hope</a></li>
                                 <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/quickCash") ? "current-menu-item" : "" ?>"><a href="quickCash">Quick Cash</a></li>

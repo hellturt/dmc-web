@@ -1,4 +1,8 @@
-<?php include 'component/header.php'; ?>
+<?php
+$pageTitle = "Tentang Kami";
+$pageDescription = "This is the Tentang Kami page of our website.";
+include 'component/header.php';
+?>
 
 <main id="primary" class="site-main main-about">
     <section class="header">

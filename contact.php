@@ -1,4 +1,8 @@
-<?php include 'component/header.php'; ?>
+<?php
+$pageTitle = "Hubungi Kami";
+$pageDescription = "This is the Hubungi Kami page of our website.";
+include 'component/header.php';
+?>
 
 <main id="primary" class="site-main main-contact">
     <section class="header" style="background-image: url('img/contact-sect1-bg.jpg')">

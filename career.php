@@ -1,4 +1,8 @@
-<?php include 'component/header.php'; ?>
+<?php
+$pageTitle = "Karier";
+$pageDescription = "This is the Karier page of our website.";
+include 'component/header.php';
+?>
 
 <main id="primary" class="site-main main-career">
     <section class="header" style="background-image: url('img/career-sect1-bg.jpg')">
@@ -103,7 +107,7 @@
         <div class="container">
             <div class="img" style="background-image: url('img/form-bg.jpg')">
                 <h1>
-                    Mulakan Kerjaya anda dengan kami.
+                    <span>Mulakan</span> Kerjaya anda dengan kami.
                 </h1>
             </div>
             <div class="form">

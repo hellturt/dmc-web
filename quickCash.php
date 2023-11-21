@@ -1,4 +1,8 @@
-<?php include 'component/header.php'; ?>
+<?php
+$pageTitle = "Quick Cash";
+$pageDescription = "This is the Quick Cash page of our website.";
+include 'component/header.php';
+?>
 
 <main id="primary" class="site-main main-quick-cash">
     <section class='header' style="background-image: url('img/quick-cash-bg.jpg')">

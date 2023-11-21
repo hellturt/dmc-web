@@ -1,4 +1,8 @@
-<?php include 'component/header.php'; ?>
+<?php
+$pageTitle = "Welcome";
+$pageDescription = "This is the home page of our website.";
+include 'component/header.php';
+?>
 
 <main id="primary" class="site-main main-home">
     <section class='cta-secondHope'>
