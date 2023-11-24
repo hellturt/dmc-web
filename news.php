@@ -7,20 +7,20 @@ include 'component/header.php';
 <main id="primary" class="site-main main-news">
     <section class="header">
         <div class="container">
-            <h1>Mewujudkan Masa Depan Kewangan yang Inklusif</h1>
+            <h1>Mewujudkan Masa Depan Kewangan yang Influsif</h1>
 
             <div class="details-container">
                 <div class="content">
-                    <h2>Manfaat Menyertai Program Second Hope</h2>
+                    <h2>Kebaikan Meyertai Program Harapan Kedua</h2>
                     <p>
-                        Program Second Hope menawarkan satu bentuk penyelesaian menyeluruh bagi peminjam ingkar untuk membina kehidupan baru yang lebih terjamin.
+                        Program Harapan kedua menawarkan penyelesaian menyeluruh untuk individu yang telah disenaraihitamkan oleh Institusi Kewangan, membantu mereka membina kehidupan yang stabil melalui pengurusan kewangan yang berkesan.
                     </p>
 
                     <ul>
-                        <li>Hapus rekod/nama dari senarai hitam institusi kewangan dan syarikat kredit.</li>
-                        <li>Menambahkan jumlah pendapatan bersih (take-home pay) peserta program</li>
-                        <li>Mewujudkan semula keupayaan untuk memohon bantuan kewangan daripada bank.</li>
-                        <li>Peluang yang baik untuk meningkatkan kualiti hidup dan taraf hidup anda serta keluarga.</li>
+                        <li>Bebas rekod / nama dari senaraihitam Institusi Kewangan dan syarikat kredit</li>
+                        <li>Pendapatan bersih (gaji bawa pulang) peserta program dijumlahkan bersama</li>
+                        <li>Memberi harapan kedua kepada peserta program untuk memohon pembiayaan baru dari Institusi Kewangan</li>
+                        <li>Peluang terbaik untuk meningkatkan kualiti hidup peserta program serta keluarga</li>
                     </ul>
                 </div>
                 <img src="img/news-sect1-bg.png" alt="">
@@ -35,14 +35,14 @@ include 'component/header.php';
             </div>
             <div class="details-container">
                 <p>
-                    Hasil kajian atas talian yang telah dilakukan oleh Agensi Kaunseling & Pengurusan Kredit (AKPK), lebih daripada 80% maklum balas yang diterima menyatakan bahawa beban pembiayaan telah mengganggu prestasi kerja mereka.
+                    Menurut tinjauan dalam talian baru-baru ini oleh Agensi Kaunseling & Pengurusan Kredit, lebih daripada 80% responden mengatakan bahawa prestasi kerja mereka telah terjejas akibat beban kewangan pembiayaan.
                 </p>
 
                 <ul>
-                    <li>Prestasi kerja yang teruk disebabkan gagal untuk memberi tumpuan kerana bergelut dengan masalah yang dihadapi.</li>
-                    <li>Menjauhkan diri daripada keluarga dan rakan-rakan kerana rasa malu dan kurang keyakinan.</li>
-                    <li>Hilang kelayakan memohon pembiayaan yang baru.</li>
-                    <li>Sering gemuruh dan rasa tertekan sehingga mempengaruhi kesihatan fizikal dan mental.</li>
+                    <li>Prestasi kerja seseorang itu terjejas kerana mereka tidak dapat menumpukan perhatian pada tugas mereka kerana masalah pengurusan kewangan yang dihadapi</li>
+                    <li>Hilang kelayakan untuk memohon pembiayaan baru dari Institusi Kewangan Malaysia</li>
+                    <li>Mula menjauhkan diri dari keluarga dan rakan-rakan kerana berasa malu serta kurang keyakinan</li>
+                    <li>Sering rasa tidak tenang dan tertekan disebabkan oleh tidak dapat membuat pembayaran pembiayaan</li>
                 </ul>
             </div>
         </div>

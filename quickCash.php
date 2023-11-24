@@ -10,7 +10,7 @@ include 'component/header.php';
             <div class='content'>
                 <h1>Quick Cash</h1>
                 <p>
-                    Quick Cash ialah perkhidmatan yang membolehkan anda berehat dan berehat daripada tekanan kewangan.
+                    Quick Cash ialah perkhidmatan yang membantu anda mendapatkan bantuan kewangan secara <b>CEPAT</b>, <b>MUDAH</b>, dan <b>TELUS</b>.
                 </p>
                 <a class='btn-main' href="#">Info Lanjut</a>
             </div>
@@ -19,26 +19,26 @@ include 'component/header.php';
 
     <section class='quick-cash-content'>
         <div class='container'>
-            <h1>Apa faedah menggunakan Quick Cash</h1>
+            <h1>Apakah kelebihan yang ditawarkan oleh Quick Cash?</h1>
 
             <div class='single-step'>
                 <div>01</div>
                 <div>
-                    <h2>Jika perbelanjaan yang tidak dijangka menyebabkan anda berasa cemas, DMC Fincap sedia membantu dan memberikan sokongan.</h2>
-                    <p>Kadar faedah/pembiayaan yang rendah dan berpatutan</p>
-                    <p>Proses permohonan adalah cepat dan mudah</p>
-                    <p>Tempoh bayaran balik/pembayaran yang fleksibel sehingga 120 bulan</p>
-                    <p>Terbuka kepada individu yang telah disenarai hitam oleh Institusi Kewangan</p>
+                    <h2>Jika anda mengalami kebimbangan akibat perbelanjaan yang tidak dijangka, DMC Fincap bersedia untuk membantu dengan menawarkan Quick Cash kepada anda</h2>
+                    <p>Kadar keuntungan yang berpatutan untuk pembiayaan Quick Cash</p>
+                    <p>Proses permohonan adalah cepat, mudah, dan telus</p>
+                    <p>Tempoh bayaran balik yang fleksibel sehingga 120 bulan</p>
+                    <p>Solusi kepada individu yang telah disenaraihitam oleh Institusi Kewangan <i>(tertakluk kepada terma dan syarat)</i></p>
                 </div>
             </div>
 
             <div class='single-step'>
                 <div>02</div>
                 <div>
-                    <h2>Penyelesaian pantas untuk pelbagai keperluan dalam kehidupan.</h2>
-                    <p>Bina Rumah Impian anda</p>
-                    <p>Sebuah pintu untuk kebangkitan semula</p>
-                    <p>Perbelanjaan pendidikan</p>
+                    <h2>Bantuan kewangan pantas untuk keperluan kehidupan yang berbeza</h2>
+                    <p>Membina rumah impian anda</p>
+                    <p>Perbelanjaan Pendidikan</p>
+                    <p>Perbelanjaan kewangan kecemasan</p>
                 </div>
             </div>
 

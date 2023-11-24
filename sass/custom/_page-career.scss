@@ -120,13 +120,15 @@
         }
 
         .team-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
             width: 100%;
         }
 
         .single-team {
+            width: calc(20% - 20px);
             text-align: center;
 
             img {
@@ -312,7 +314,9 @@
     @media (max-width: 620px) {
         section.section2 {
             .team-container {
-                grid-template-columns: 1fr 1fr;
+                .single-team {
+                    width: calc(50% - 20px);
+                }
             }
         }
     }

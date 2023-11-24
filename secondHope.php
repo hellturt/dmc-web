@@ -15,14 +15,14 @@ include 'component/header.php';
 
         <div class='container'>
             <div class='content'>
-                <h1>Apa Itu Program Second Hope / Program Harapan Kedua</h1>
+                <h1>Apa Itu Program Harapan Kedua</h1>
                 <p>
-                    Program Second Hope atau Program Harapan Kedua diperkenalkan oleh DMC FinCap (DMC) khusus untuk kakitangan kerajaan persekutuan, kerajaan negeri dan syarikat berkaitan kerajaan (GLC) yang terpilih yang ingin memperbaiki status kredit yang terjejas akibat daripada pembiayaan tidak berbayar dan membaikpulih pengurusan kewangan, sekaligus meningkatkan kualiti kehidupan mereka secara menyeluruh.
+                    DMC FinCap telah memperkenalkan Program Harapan Kedua, yang bertujuan untuk membantu kakitangan kerajaan persekutuan, kerajaan negeri, dan syarikat berkaitan kerajaan (GL) tertentu yang telah disenaraihitamkan oleh Institusi Kewangan Malaysia.
                 </p>
                 <br>
-                <h1>Peluang Kedua Yang Bermakna</h1>
+                <h1>Harapan Kedua Yang Bermakna</h1>
                 <p>
-                    Melalui penstrukturan menyeluruh dan pembayaran semula hutang, peserta program ini dapat memiliki kelayakan semula sebagai pemohon yang layak membuat pembiayaan daripada institusi kewangan. Ini adalah peluang kedua yang bermakna untuk mengubah kehidupan anda dan keluarga.
+                    Melalui proses penyusunan semula pengurusan kewangan dengan teliti dan melunaskan pembiayaan yang disenaraihitamkan sebelum ini, individu yang menyertai program ini boleh memulihkan kelayakan mereka untuk bantuan kewangan daripada Institusi Kewangan. Ini memberi peluang yang sangat baik kepada mereka untuk memperbaiki kehidupan mereka dan kehidupan keluarga mereka.
                 </p>
             </div>
         </div>
@@ -30,20 +30,16 @@ include 'component/header.php';
 
     <section class='second-hope-content'>
         <div class='container'>
-            <h1>Bagaimana Program Second Hope Berfungsi</h1>
+            <h1>Bagaimana Program Harapan Kedua beroperasi?</h1>
             <div class='steps-container'>
                 <div class='single-step'>
                     <div>01</div>
                     <div>
-                        <h2>Hubungi Kami</h2>
+                        <h2>Borang Atas Talian</h2>
                         <p>
-                            Individu yang berminat untuk memohon boleh menghubungi kami untuk mendapatkan khidmat rundingan khusus menerusi.
+                            Anda hendaklah mengisi borang permohonan atas talian serta sertakan dokumen yang diperlukan. Sekiranya terdapat sebarang bantuan atau pertanya, sila hubungi kami di
                         </p>
                         <div class="contact-container">
-                            <a href="dmcfincap.com">
-                                <img src="img/icon/web.png" alt="">
-                                dmcfincap.com
-                            </a>
                             <a href="mailto:info@dmcfincap.com">
                                 <img src="img/icon/mail.png" alt="">
                                 info@dmcfincap.com
@@ -62,9 +58,9 @@ include 'component/header.php';
                 <div class='single-step'>
                     <div>02</div>
                     <div>
-                        <h2>Saringan Kelayakan Pembiayaan</h2>
+                        <h2>Proses Saringan Kelayakan</h2>
                         <p>
-                            Individu yang mendaftar untuk program ini, akan melalui proses saringan kelayakan menggunakan system kami iaitu Sistem Pengiraan Pembiayaan Bersepadu (Centralised Loan Calculating System - CLCS) dengan mengambil kira rekod CTOS, Experian dan CCRIS.
+                            Bahagian Pemproses Kredit akan memproses permohonan anda dengan mendapatkan maklumat berkaitan dengan pembiayaan yang disenaraihitam melalui platform Experien, CTOS dan CCRIS. Dengan bantuan system pengiraan pembiayaan bersepadu (CLCS) juga akan memastikan proses pemprosesan lebih telus, cepat dan selamat.
                         </p>
                     </div>
                 </div>
@@ -72,9 +68,9 @@ include 'component/header.php';
                 <div class='single-step'>
                     <div>03</div>
                     <div>
-                        <h2>Penstrukturan Semula Pembiayaan Dan Penghapusan Rekod Hitam</h2>
+                        <h2>Skor Kredit Meningkat</h2>
                         <p>
-                            Peserta yang layak mendapatkan pembiayaan setelah proses saringan akan melalui system penstrukturan semula pembiayaan mereka. DMC akan menggunakan dana daripada pihak yang bekerjasama dengan kami untuk membantu membayar semula baki hutang yang disenarai hitam. Bantuan ini secara automatic akan mengeluarkan nama daripada rekod senarai hitam.
+                            Pihak DMC Fincap akan melangsaikan pembiayaan yang disenaraihitam oleh Institusi Kewangan. Dengan ini, skor kredit akan meningkat dan menunjukkan nama anda bebas dari disenaraihitam.
                         </p>
                     </div>
                 </div>
@@ -82,9 +78,9 @@ include 'component/header.php';
                 <div class='single-step'>
                     <div>04</div>
                     <div>
-                        <h2>Pembiayaan Baharu Dan Pembayaran Semula Kepada DMC</h2>
+                        <h2>Pembiayaan Baru</h2>
                         <p>
-                            DMC akan membantu peserta / peminjam untuk memohon pembiayaan peribadi daripada mana-mana institusi kewangan terpilih. Setelah pembiayaan baru lulus, dana DMC serta cas perkhidmatan yang berpatutan perlu dibayar semula kepada DMC
+                            Pembiayaan baru boleh dimohon dari mana-mana Institusi Kewangan dengan kadar keuntungan yang lebih rendah. Dengan ini, anda boleh membayar semula pembiayaan bersama DMC Fincap Sdn Bhd.
                         </p>
                     </div>
                 </div>
@@ -92,20 +88,20 @@ include 'component/header.php';
                 <div class='single-step'>
                     <div>05</div>
                     <div>
-                        <h2>Kebebasan Untuk Memohon Pembiayaan Yang Baharu</h2>
+                        <h2>Transaksi Terjamin</h2>
                         <p>
-                            Dengan rekod kewangan yang bersih, para peserta / peminjam mempunyai kebebasan 100% untuk memohon pembiayaan daripada mana-mana institusi kewangan berlesen seperti pembiayaan kereta, perumahan dan pembiayaan peribadi
+                            Kami mengutamakan keselamatan dan kebolehpercayaan setiap transaksi yang berlaku dalam syarikat kami.
                         </p>
                     </div>
                 </div>
 
-                <div class='single-step'>
+                <!-- <div class='single-step'>
                     <div><img class="caret" src="img/caret-right.svg" alt=""></div>
                     <div>
                         <p>Sila download contoh kadar bayaran bulanan & kadar interest rate</p>
                         <a class='btn-main' href="#">Bayaran Bulanan.PDF</a>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <a href="" class='btn-main xl'>Daftar Sekarang</a>

@@ -17,8 +17,8 @@ include 'component/header.php';
     <section class='cta-secondHope'>
         <div class='container'>
             <div class='column column-content'>
-                <h1>Peluang Kedua Pembiayaan Tidak Berbayar.</h1>
-                <p>Nama anda disenarai hitam? Ketahui solusi bagi masalah anda menerusi <b>Program Second Hope</b>.
+                <h1>Harapan Kedua Pembiayaan Tidak Berbayar</h1>
+                <p>Jika nama anda disenaraihitam? Anda boleh mencari penyelesaian kepada masalah anda dengan menyertai <b>Program Harapan Kedua</b>.
                 </p>
                 <a class='btn-main xl' href="/dmc-web/secondHope">Info Lanjut</a>
             </div>
@@ -45,7 +45,7 @@ include 'component/header.php';
 
             <div class='column column-content'>
                 <h1>Tentang Kami</h1>
-                <p><b>DMC FinCap Sdn Bhd</b> ialah syarikat FinTech yang ditubuhkan pada tahun 2021 di Malaysia.</p>
+                <p><b>DMC FinCap Sdn Bhd</b> merupakan sebuah syarikat FinTech yang ditubuhkan pada tahun 2021 di Malaysia.</p>
                 <a class='btn-main' href="/dmc-web/about">Info Lanjut</a>
                 <img src="img/cap.png" alt="">
             </div>
@@ -92,7 +92,7 @@ include 'component/header.php';
 
             <div class='header'>
                 <h1>Berita</h1>
-                <p>Layari berita lanjut dengan kami dan proses pengurusan kewangan.</p>
+                <p>Layari berita lanjut dan tips pengurusan kewangan.</p>
                 <a class='btn-main' href="/dmc-web/news">Info Lanjut</a>
             </div>
         </div>

@@ -8,9 +8,9 @@ include 'component/header.php';
     <section class="header" style="background-image: url('img/career-sect1-bg.jpg')">
         <div class="container">
             <div class="content">
-                <h1>Pasukan Hebat Kami Adalah Kunci Untuk Kejayaan Kami</h1>
+                <h1>Pasukan Hebat Merupakan Kunci Kejayaan Kami</h1>
                 <p>
-                    Setiap seorang daripada kami tidak kira jabatan atau senioriti mereka memberi komited yang berterusan inovasi dan pertumbuhan yang tinggi.
+                    Kami sentiasa bersatu hati dan memberi komitmen yang berterusan bagi memastikan syarikat akan terus berdaya maju.
                 </p>
             </div>
         </div>
@@ -18,7 +18,7 @@ include 'component/header.php';
 
     <section class="section1">
         <div class="container">
-            <h1 class="section-title">Our Culture</h1>
+            <h1 class="section-title">Budaya Kami</h1>
             <div class="tab-container">
                 <div class="tab people-btn active">People</div>
                 <div class="tab respect-btn">Respect</div>
@@ -31,7 +31,7 @@ include 'component/header.php';
                 <div class="single-content">
                     <h2>People</h2>
                     <p>
-                        We put our customers and their needs first. We're always prepared to make time for our customers and each other
+                        Keutamaan utama kami ialah mengutamakan pelanggan dan keperluan mereka. Kami sentiasa bersedia dan bersedia meluangkan masa untuk pelanggan dan rakan sekerja kami.
                     </p>
                 </div>
                 <div class="single-content">
@@ -64,11 +64,11 @@ include 'component/header.php';
 
     <section class="section2">
         <div class="container">
-            <h1 class="section-title">Our Teams</h1>
+            <h1 class="section-title">Pasukan Kami</h1>
             <div class="team-container">
                 <div class="single-team">
                     <img src="img/career-customer-service.jpg" alt="">
-                    <h3>Customer Service</h3>
+                    <h3>Perkhidmatan Pelanggan</h3>
                 </div>
                 <div class="single-team">
                     <img src="img/career-it.jpg" alt="">
@@ -76,15 +76,23 @@ include 'component/header.php';
                 </div>
                 <div class="single-team">
                     <img src="img/career-digital-marketing.jpg" alt="">
-                    <h3>Digital Marketing</h3>
+                    <h3>Pemasaran Digital</h3>
                 </div>
                 <div class="single-team">
                     <img src="img/career-finance.jpg" alt="">
-                    <h3>Finance</h3>
+                    <h3>Kewangan</h3>
                 </div>
                 <div class="single-team">
                     <img src="img/career-hr.jpg" alt="">
-                    <h3>Human Resource</h3>
+                    <h3>Sumber Manusia</h3>
+                </div>
+                <div class="single-team">
+                    <img src="img/career-hr.jpg" alt="">
+                    <h3>Pemprosesan Kredit</h3>
+                </div>
+                <div class="single-team">
+                    <img src="img/career-hr.jpg" alt="">
+                    <h3>Jualan</h3>
                 </div>
             </div>
         </div>

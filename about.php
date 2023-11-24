@@ -11,7 +11,7 @@ include 'component/header.php';
         </div>
         <div class="content">
             <p>
-                DMC FinCap Sdn Bhd ialah syarikat FinTech yang ditubuhkan pada tahun 2021 di Malaysia. Kami pakar dalam mencipta sistem aplikasi pembiayaan untuk perniagaan, merevolusikan proses pinjaman dan kredit. Kami juga menyediakan program pengurusan pembiayaan unik yang dipanggil Program Harapan Kedua, yang membantu peminjam yang gagal membayar pinjaman mereka untuk membina semula kewangan mereka dan meningkatkan kualiti hidup mereka.
+                DMC FinCap Sdn Bhd, sebuah syarikat FinTech yang ditubuhkan di Malaysia pada 2021. Fokus kami adalah mencipta sistem aplikasi pembiayaan termaju untuk perniagaan dan mengubah proses pembiayaan dan kredit. Di samping itu, kami menyediakan Program Harapan Kedua, inisiatif kami untuk membantu individu yang telah disenaraihitamkan oleh Institusi Kewangan dalam meningkatkan status kredit mereka, membolehkan mereka mencari peluang pembiayaan baharu di Malaysia.
             </p>
         </div>
     </section>
@@ -19,9 +19,9 @@ include 'component/header.php';
     <section class="section1" style="background-image: url('img/about-sect1-bg.jpg')">
         <div class="container">
             <div class="content">
-                <h1>Mewujudkan Masa Depan Kewangan yang Inklusif</h1>
+                <h1>Membina masa depan kewangan yang inklusif</h1>
                 <p>
-                    Tujuan berhasrat untuk memperkasakan perniagaan dan komuniti dengan akses mudah kepada peluang pembiayaan dan sistem keselamatan yang lebih baik, meningkatkan keseluruhan pengalaman untuk semua orang ke tahap yang lain.
+                    Tujuan inisiatif ini adalah untuk menyediakan komuniti akses mudah kepada pilihan pembiayaan dan sistem pengurusan kewangan yang boleh dipercayai. Selain itu, ia bertujuan untuk meningkatkan pengalaman keseluruhan untuk semua orang yang terlibat.
                 </p>
             </div>
         </div>
@@ -32,18 +32,18 @@ include 'component/header.php';
             <div class="left">
                 <h2>Misi</h2>
                 <p>
-                    Membangun dan menambah baik sistem pengurusan kewangan secara berterusan untuk menjadikannya lebih mudah dan mesra pengguna, yang membawa kepada proses dan perkhidmatan pembiayaan yang diperkemas dan selamat.
+                    Misi kami adalah untuk menjadi syarikat fintech terkemuka yang menggunakan teknologi termaju dan penyelesaian digital untuk merevolusikan industri kewangan serta mencipta masa depan yang lebih baik untuk individu dan perniagaan.
                 </p>
                 <br>
                 <h2>Visi</h2>
                 <p>
-                    Kami berusaha untuk berada di barisan hadapan dalam industri fintech dengan menggunakan teknologi termaju dan penyelesaian digital untuk merevolusikan sektor kewangan dan meningkatkan kehidupan individu dan perniagaan.
+                    Kami berhasrat untuk sentiasa menambah baik sistem pengurusan kewangan untuk menjadikannya lebih mudah dan cekap sambil memastikannya selamat. Selain itu, kami berhasrat untuk mewujudkan komuniti yang positif dan inklusif melalui program kewangan sosial kami, Program Harapan Kedua.
                 </p>
             </div>
             <div class="right" style="background-image: url('img/about-sect3-bg.jpg')">
                 <h2>Kewangan Sosial Berkekalan</h2>
                 <p>
-                    Matlamat kami adalah untuk menjadikan perkhidmatan kewangan lebih mudah diakses dan inklusif untuk mereka yang menghadapi masalah kewangan. Itulah sebabnya kami mencipta Program Harapan Kedua, yang membantu peminjam yang bergelut untuk mengawal semula keadaan kewangan mereka.
+                    Kami berhasrat untuk menyediakan perkhidmatan kewangan yang boleh diakses dan inklusif bagi mereka yang mengalami masalah kewangan. Kami telah membangunkan Program Harapan Kedua untuk mencapai matlamat ini, yang membantu individu yang telah disenaraihitam mengawal semula keadaan kewangan mereka.
                 </p>
             </div>
         </div>
@@ -137,7 +137,7 @@ include 'component/header.php';
             <div class="content">
                 <h1>Keperluan kewangan di hujung jari anda.</h1>
                 <p>
-                    Melalui penstrukturan menyeluruh dan pembayaran semula hutang, peserta program ini dapat memiliki kelayakan semula sebagai pemohon yang layak membuat pembiayaan daripada institusi kewangan. Ini adalah peluang kedua yang bermakna untuk mengubah kehidupan anda dan keluarga.
+                    Dengan menjalani penstrukturan semula yang menyeluruh dan menyelesaikan hutang mereka, individu yang terlibat dalam inisiatif ini berpeluang memohon pembiayaan baharu daripada bank dan organisasi kewangan lain. Ini berfungsi sebagai peluang berharga untuk permulaan baharu, dengan potensi untuk memberi kesan positif kepada kehidupan mereka sendiri dan ahli keluarga mereka.
                 </p>
             </div>
         </div>
