@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $('.icon-ornament').hide()
+
+
+
     // modal
     let closeState = sessionStorage.getItem("modal-close");
     if (!closeState) {
@@ -12,8 +16,43 @@ $(document).ready(function () {
         $('body').removeClass('pause');
     })
 
+    $('.popup-clickaway').click(function () {
+        sessionStorage.setItem("modal-close", true);
+        $('.modal-container').hide()
+        $('body').removeClass('pause');
+    })
+
+
+
+    // Smooth scroll to anchor
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+
+        var target = $($(this).attr('href'));
+
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 800);
+        }
+    });
+
+
+
+    // DMC Icon
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+            $('.icon-ornament').fadeIn();
+        } else {
+            $('.icon-ornament').fadeOut();
+        }
+    });
+
+
+
     // Career Form
-    $('#email, #name, #tel, #interest, #message').click(function () {
+    $('#email, #name, #tel, #interest, #message, #resume').click(function () {
         $('.form-alert-container').removeClass('active success fail alert');
         $('.form-alert-container').empty();
     })
@@ -23,51 +62,83 @@ $(document).ready(function () {
         var email = $('#email').val();
         var name = $('#name').val();
         var phone = $('#tel').val();
-        var subject = 'DMC FinCap Web Career Form';
         var interest = $('#interest').val();
         var message = $('#message').val();
+        var resume = $('#resume').prop('files');
 
-        if (!(email && name && phone && subject && message)) {
+        if (!(email && name && phone && message && (interest !== null && interest !== '') && (resume.length !== 0))) {
             $('.form-alert-container').append('Sila isi semua maklumat yang diperlukan.')
             $('.form-alert-container').addClass('active alert')
         } else {
-            var compiledMessage = `
-                Message from DMC Web Career<br/><br/>
-                Name: ${name}<br/>
-                Email: ${email}<br/>
-                Phone No.: ${phone}<br/>
-                -------------------------<br/>
-                Interest in: ${interest}<br/>
-                Message: ${message}
-            `
+            var formData = new FormData();
+            formData.append("email", email);
+            formData.append("name", name);
+            formData.append("tel", phone);
+            formData.append("interest", interest);
+            formData.append("message", message);
+            formData.append("resume", $('[name="resume"]')[0].files[0]);
+
+            $.ajax({
+                url: "send_email.php",
+                data: formData,
+                type: 'POST',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    if (response === 'success') {
+                        // show success message
+                        $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
+                        $('.form-alert-container').addClass('active success')
+                        // clear form
+                        $('#email').val('');
+                        $('#name').val('');
+                        $('#tel').val('');
+                        $('#interest').val('');
+                        $('#message').val('');
+                        $('#resume').val('');
+                    } else {
+                        // show error message
+                        $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
+                        $('.form-alert-container').addClass('active fail')
+                    }
+
+                    setTimeout(() => {
+                        $('.form-alert-container').removeClass('active success fail alert');
+                        $('.form-alert-container').empty();
+                    }, 6000);
+                }
+            });
+
 
             // Send data to the server
-            $.post('send_email.php', {
-                email: email,
-                subject: subject,
-                message: compiledMessage
-            }, function (response) {
-                if (response === 'success') {
-                    // show success message
-                    $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
-                    $('.form-alert-container').addClass('active success')
-                    // clear form
-                    $('#email').val('');
-                    $('#name').val('');
-                    $('#tel').val('');
-                    $('#interest').val('');
-                    $('#message').val('');
-                } else {
-                    // show error message
-                    $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
-                    $('.form-alert-container').addClass('active fail')
-                }
+            // $.post('send_email.php', {
+            //     email: email,
+            //     subject: subject,
+            //     message: compiledMessage,
+            //     resume: resume
+            // }, function (response) {
+            //     if (response === 'success') {
+            //         // show success message
+            //         $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
+            //         $('.form-alert-container').addClass('active success')
+            //         // clear form
+            //         $('#email').val('');
+            //         $('#name').val('');
+            //         $('#tel').val('');
+            //         $('#interest').val('');
+            //         $('#message').val('');
+            //     } else {
+            //         // show error message
+            //         $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
+            //         $('.form-alert-container').addClass('active fail')
+            //     }
 
-                setTimeout(() => {
-                    $('.form-alert-container').removeClass('active success fail alert');
-                    $('.form-alert-container').empty();
-                }, 6000);
-            });
+            //     setTimeout(() => {
+            //         $('.form-alert-container').removeClass('active success fail alert');
+            //         $('.form-alert-container').empty();
+            //     }, 6000);
+            // });
         }
     });
 

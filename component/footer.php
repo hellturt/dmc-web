@@ -1,3 +1,7 @@
+    <div class="icon-ornament">
+        <img src="img/logo-icon.png" alt="DMC Logo">
+    </div>
+
     <footer class="site-footer">
         <div class='container'>
             <div class='footer-container'>
@@ -10,16 +14,11 @@
                 </br>
 
                 <h3>© DMC FINCAP SDN BHD (1414444-W). ALL RIGHTS RESERVED</h3>
-                <p>
-                    is regulated by Kementerian Pembangunan Kerajaan Tempatan
-                    (licensee providing digital services) under MY Licence Serial
-                    Number XXXXX in Malaysia.
-                </p>
             </div>
 
             <div class='footer-container'>
                 <h3>Nombor Telefon</h3>
-                <p>03 - 8966 3700</p>
+                <p>+603-8966 3500</p>
                 </br>
                 <h3>Emel</h3>
                 <p>info@dmcfincap.com</p>
@@ -57,6 +56,7 @@
     </footer>
 
     <script src="js/navigation.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

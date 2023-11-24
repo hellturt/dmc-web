@@ -20,40 +20,40 @@ include 'component/header.php';
         <div class="container">
             <h1 class="section-title">Budaya Kami</h1>
             <div class="tab-container">
-                <div class="tab people-btn active">People</div>
-                <div class="tab respect-btn">Respect</div>
-                <div class="tab rapid-btn">Rapid</div>
-                <div class="tab team-btn">Team Spirit</div>
-                <div class="tab fun-btn">Serious Fun</div>
+                <div class="tab people-btn active">Pelanggan Pertama</div>
+                <div class="tab respect-btn">Hormat</div>
+                <div class="tab rapid-btn">Cepat</div>
+                <div class="tab team-btn">Semangat Berpasukan</div>
+                <div class="tab fun-btn">Semangat</div>
             </div>
 
-            <div class="content-container owl-carousel">
+            <div class="content-container owl-carousel culture-container">
                 <div class="single-content">
-                    <h2>People</h2>
+                    <h2>Pelanggan Pertama</h2>
                     <p>
                         Keutamaan utama kami ialah mengutamakan pelanggan dan keperluan mereka. Kami sentiasa bersedia dan bersedia meluangkan masa untuk pelanggan dan rakan sekerja kami.
                     </p>
                 </div>
                 <div class="single-content">
-                    <h2>Respect</h2>
+                    <h2>Hormat</h2>
                     <p>
                         2 We put our customers and their needs first. We're always prepared to make time for our customers and each other
                     </p>
                 </div>
                 <div class="single-content">
-                    <h2>Rapid</h2>
+                    <h2>Cepat</h2>
                     <p>
                         3 We put our customers and their needs first. We're always prepared to make time for our customers and each other
                     </p>
                 </div>
                 <div class="single-content">
-                    <h2>Team Spirit</h2>
+                    <h2>Semangat Berpasukan</h2>
                     <p>
                         4 We put our customers and their needs first. We're always prepared to make time for our customers and each other
                     </p>
                 </div>
                 <div class="single-content">
-                    <h2>Serious Fun</h2>
+                    <h2>Semangat</h2>
                     <p>
                         5 We put our customers and their needs first. We're always prepared to make time for our customers and each other
                     </p>
@@ -106,12 +106,12 @@ include 'component/header.php';
                 <p>
                     Kami benar-benar menghargai pelatih kami, idea inovatif mereka, perspektif segar dan kesediaan untuk mencuba perkara baru.
                 </p>
-                <a href="" class='btn-main'>Sertai kami</a>
+                <a href="#anchor-career-form" class='btn-main'>Sertai kami</a>
             </div>
         </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="anchor-career-form">
         <div class="container">
             <div class="img" style="background-image: url('img/form-bg.jpg')">
                 <h1>
@@ -122,9 +122,17 @@ include 'component/header.php';
                 <form id="careerForm">
                     <h2>Kami ingin mendengar tentang anda</h2>
                     <input type="text" name="name" id="name" placeholder="Nama*" required>
-                    <input type="text" name="interest" id="interest" placeholder="Berminat dalam*" required>
+                    <select name="interest" id='interest' placeholder="Berminat dalam*" required>
+                        <option value="" disabled selected hidden>Berminat dalam*</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Sepenuh Masa">Sepenuh Masa</option>
+                    </select>
                     <input type="email" name="email" id="email" placeholder="Emel*" required>
                     <input type="tel" name="tel" id="tel" placeholder="No. Telefon*" required>
+                    <div class="form-group full-width">
+                        <label for="resume">Muat Naik Resume (PDF/Word):*</label>
+                        <input type="file" id="resume" name="resume" accept=".doc,.docx,.xml,.pdf,application/msword,application/pdf" required>
+                    </div>
                     <textarea name="message" id="message" cols="30" rows="10" required placeholder="Sila beritahu kami sedikit tentang anda, mengapa anda sesuai dan bagaimana anda mendengarnya tentang kami."></textarea>
                     <div class="form-alert-container"></div>
                     <button type="button" id="sendEmail">Hantar</button>
@@ -137,7 +145,7 @@ include 'component/header.php';
 <script>
     $(document).ready(function() {
         // Carousel
-        var owl = $('.owl-carousel');
+        var owl = $('.owl-carousel.culture-container');
         owl.owlCarousel({
             responsive: {
                 // breakpoint from 0 up
@@ -145,12 +153,14 @@ include 'component/header.php';
                     items: 1,
                     loop: true,
                     mouseDrag: true,
+                    dots: false
                 },
                 // breakpoint from 992 up
                 992: {
                     items: 1,
                     loop: true,
                     mouseDrag: false,
+                    dots: false
                 }
             }
         });

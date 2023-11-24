@@ -55,7 +55,7 @@
                         </li>
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/about") ? "current-menu-item" : "" ?>"><a href="about">Tentang Kami</a></li>
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/news") ? "current-menu-item" : "" ?>"><a href="news">Berita</a></li>
-                        <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/career") ? "current-menu-item" : "" ?>"><a href="career">Karier</a></li>
+                        <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/career") ? "current-menu-item" : "" ?>"><a href="career">Kerjaya</a></li>
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/contact") ? "current-menu-item" : "" ?>"><a href="contact">Hubungi Kami</a></li>
                         <li class="menu-item"><a href="registration" target="_blank">Daftar Sekarang</a></li>
                     </ul>
@@ -63,3 +63,12 @@
             </nav>
         </div>
     </header>
+
+    <div class="modal-container">
+        <div class="modal-content-container">
+            <button id="modal-close" type="button">
+                <iconify-icon icon="ep:close-bold"></iconify-icon>
+            </button>
+            <a class='popup-clickaway' href="secondHope"><img src="img/popout-message.png" alt=""></a>
+        </div>
+    </div>

@@ -8,7 +8,7 @@ include 'component/header.php';
     <section class='header'>
         <div class='img-carousel-container'>
             <div class='label'>
-                <img src="img/logo-second-hope.png" alt="">
+                <img src="img/logo-harapan-kedua.png" alt="">
             </div>
             <img src="img/second-hope-crsl.jpg" alt="">
         </div>
@@ -28,6 +28,12 @@ include 'component/header.php';
         </div>
     </section>
 
+    <section class="video-section">
+        <div class="container">
+            <iframe width="100%" src="https://www.youtube.com/embed/n9LgeoJE4EI?si=nhCKPt3SZI4H6iuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <section class='second-hope-content'>
         <div class='container'>
             <h1>Bagaimana Program Harapan Kedua beroperasi?</h1>
@@ -44,9 +50,9 @@ include 'component/header.php';
                                 <img src="img/icon/mail.png" alt="">
                                 info@dmcfincap.com
                             </a>
-                            <a href="tel:+60389663700">
+                            <a href="tel:+60389663500">
                                 <img src="img/icon/phone.png" alt="">
-                                03 - 8966 3700
+                                +603-8966 3500
                             </a>
                         </div>
                         <p>
@@ -104,7 +110,7 @@ include 'component/header.php';
                 </div> -->
             </div>
 
-            <a href="" class='btn-main xl'>Daftar Sekarang</a>
+            <a href="registration" class='btn-main xl'>Daftar Sekarang</a>
         </div>
     </section>
 </main>

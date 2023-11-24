@@ -209,12 +209,26 @@
             }
         }
 
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            &.full-width {
+                grid-column: 1 / -1;
+            }
+        }
+
         input,
-        textarea {
+        textarea,
+        select {
             padding: 10px;
             border: none;
             background-color: transparent;
             border-bottom: 1px solid #aaa;
+        }
+
+        input[type='file'] {
+            border-bottom: none;
         }
 
         textarea {
@@ -250,6 +264,7 @@
         }
 
         button {
+            cursor: pointer;
             padding: 12px;
             border: none;
             border-radius: 10px;

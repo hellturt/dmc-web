@@ -69,7 +69,7 @@ include 'component/header.php';
                     <p>Datang ke pejabat kami yang terletak di Kota Damansara.</p>
                     <br>
                     <p>Hubungi kami di talian</p>
-                    <a href="tel:+60389663700">03 - 8966 3700</a>
+                    <a href="tel:+60389663500">+603-8966 3500</a>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@ include 'component/header.php';
                 </div>
             </div>
 
-            <a href="" class='btn-main xl'>Mohon Sekarang</a>
+            <a href="registration" class='btn-main xl'>Mohon Sekarang</a>
         </div>
     </section>
 </main>

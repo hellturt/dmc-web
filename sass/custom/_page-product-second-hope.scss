@@ -8,6 +8,10 @@
         margin-top: 90px;
         background-color: #F3B126;
 
+        .container {
+            margin-bottom: 0;
+        }
+
         .img-carousel-container {
             background-color: #282828;
             position: relative;
@@ -41,6 +45,15 @@
             p {
                 font-size: 18px;
             }
+        }
+    }
+
+    section.video-section {
+        padding: 50px 0;
+        background-color: #ecf3f3;
+
+        iframe {
+            height: 38vw;
         }
     }
 
@@ -124,6 +137,15 @@
         section.second-hope-content {
             .single-step .contact-container {
                 grid-template-columns: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+
+        section.video-section {
+            iframe {
+                height: 45vw;
             }
         }
     }

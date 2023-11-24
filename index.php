@@ -5,29 +5,16 @@ include 'component/header.php';
 ?>
 
 <main id="primary" class="site-main main-home">
-    <div class="modal-container">
-        <div class="modal-content-container">
-            <button id="modal-close" type="button">
-                <iconify-icon icon="ep:close-bold"></iconify-icon>
-            </button>
-            <a href="registration"><img src="img/poster.jpeg" alt=""></a>
-        </div>
-    </div>
-
     <section class='cta-secondHope'>
         <div class='container'>
             <div class='column column-content'>
                 <h1>Harapan Kedua Pembiayaan Tidak Berbayar</h1>
                 <p>Jika nama anda disenaraihitam? Anda boleh mencari penyelesaian kepada masalah anda dengan menyertai <b>Program Harapan Kedua</b>.
                 </p>
-                <a class='btn-main xl' href="/dmc-web/secondHope">Info Lanjut</a>
+                <a class='btn-main xl' href="secondHope">Info Lanjut</a>
             </div>
 
             <div class='column'>
-            </div>
-
-            <div class='column column-content img-content'>
-                <img src="img/cta1.png" alt="">
             </div>
         </div>
         <video playsinline autoplay muted loop poster="video-bg.jpg" id="bgvid">
@@ -46,7 +33,7 @@ include 'component/header.php';
             <div class='column column-content'>
                 <h1>Tentang Kami</h1>
                 <p><b>DMC FinCap Sdn Bhd</b> merupakan sebuah syarikat FinTech yang ditubuhkan pada tahun 2021 di Malaysia.</p>
-                <a class='btn-main' href="/dmc-web/about">Info Lanjut</a>
+                <a class='btn-main' href="about">Info Lanjut</a>
                 <img src="img/cap.png" alt="">
             </div>
         </div>
@@ -56,11 +43,11 @@ include 'component/header.php';
         <div class='container'>
             <div class='column column-content'>
                 <h1>Produk Kami</h1>
-                <a href="/dmc-web/secondHope">
+                <a href="secondHope">
                     <img src="img/caret-right.svg" alt="">
                     Program Second Hope / Program Harapan Kedua
                 </a>
-                <a href="/dmc-web/quickCash">
+                <a href="quickCash">
                     <img src="img/caret-right.svg" alt="">
                     Quick Cash
                 </a>
@@ -93,7 +80,7 @@ include 'component/header.php';
             <div class='header'>
                 <h1>Berita</h1>
                 <p>Layari berita lanjut dan tips pengurusan kewangan.</p>
-                <a class='btn-main' href="/dmc-web/news">Info Lanjut</a>
+                <a class='btn-main' href="news">Info Lanjut</a>
             </div>
         </div>
     </section>

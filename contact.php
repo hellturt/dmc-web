@@ -35,7 +35,7 @@ include 'component/header.php';
                         </div>
                         <div class="detail-container">
                             <h3>Telefon</h3>
-                            <a href="tel:+60389663700">03-8966 3700</a>
+                            <a href="tel:+60389663500">+603-8966 3500</a>
                         </div>
                     </div>
 
@@ -46,8 +46,7 @@ include 'component/header.php';
                         </div>
                         <div class="detail-container">
                             <h3>Emel</h3>
-                            <a href="mailto:admin@dmcfincap.com">admin@dmcfincap.com</a><br>
-                            <a href="mailto:help@dmcfincap.com">help@dmcfincap.com</a>
+                            <a href="mailto:info@dmcfincap.com">info@dmcfincap.com</a><br>
                         </div>
                     </div>
                 </div>

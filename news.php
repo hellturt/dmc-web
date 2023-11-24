@@ -97,9 +97,10 @@ include 'component/header.php';
 
 <script>
     $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel.review-container").owlCarousel({
             items: 1,
-            loop: true
+            loop: true,
+            dots: true
         });
     });
 </script>

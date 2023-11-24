@@ -1,3 +1,19 @@
+.icon-ornament {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .3));
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
 .site-footer {
     background-color: #f3b126;
     display: inline-block;
@@ -24,7 +40,7 @@
     .footer-container {
         height: 100%;
         padding-right: 2.8vw;
-        border-right: 1px solid rgba(41, 41, 41, .5);
+        // border-right: 1px solid rgba(41, 41, 41, .5);
 
         &:last-child {
             border-right: none;
