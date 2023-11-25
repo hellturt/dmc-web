@@ -35,20 +35,20 @@
 
                 <h3>Ikuti kami</h3>
                 <div class="social-container">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/DMCFinCap" target="_blank" rel="noopener noreferrer">
                         <img src="img/icon/fb.png" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/dmcfincap" target="_blank" rel="noopener noreferrer">
                         <img src="img/icon/linkedin.png" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://youtube.com/@DMCFinCapTV" target="_blank" rel="noopener noreferrer">
                         <img src="img/icon/youtube.png" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://instagram.com/dmcfincap" target="_blank" rel="noopener noreferrer">
                         <img src="img/icon/instagram.png" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/tiktok.png" alt="">
+                    <a href="https://x.com/dmcfincap" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/x.png" alt="">
                     </a>
                 </div>
             </div>
