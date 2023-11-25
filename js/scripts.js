@@ -1,8 +1,6 @@
 $(document).ready(function () {
     $('.icon-ornament').hide()
 
-
-
     // modal
     let closeState = sessionStorage.getItem("modal-close");
     if (!closeState) {
@@ -57,90 +55,7 @@ $(document).ready(function () {
         $('.form-alert-container').empty();
     })
 
-    $('#sendEmail').click(function () {
-        // Collect form data
-        var email = $('#email').val();
-        var name = $('#name').val();
-        var phone = $('#tel').val();
-        var interest = $('#interest').val();
-        var message = $('#message').val();
-        var resume = $('#resume').prop('files');
 
-        if (!(email && name && phone && message && (interest !== null && interest !== '') && (resume.length !== 0))) {
-            $('.form-alert-container').append('Sila isi semua maklumat yang diperlukan.')
-            $('.form-alert-container').addClass('active alert')
-        } else {
-            var formData = new FormData();
-            formData.append("email", email);
-            formData.append("name", name);
-            formData.append("tel", phone);
-            formData.append("interest", interest);
-            formData.append("message", message);
-            formData.append("resume", $('[name="resume"]')[0].files[0]);
-
-            $.ajax({
-                url: "send_email.php",
-                data: formData,
-                type: 'POST',
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                    if (response === 'success') {
-                        // show success message
-                        $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
-                        $('.form-alert-container').addClass('active success')
-                        // clear form
-                        $('#email').val('');
-                        $('#name').val('');
-                        $('#tel').val('');
-                        $('#interest').val('');
-                        $('#message').val('');
-                        $('#resume').val('');
-                    } else {
-                        // show error message
-                        $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
-                        $('.form-alert-container').addClass('active fail')
-                    }
-
-                    setTimeout(() => {
-                        $('.form-alert-container').removeClass('active success fail alert');
-                        $('.form-alert-container').empty();
-                    }, 6000);
-                }
-            });
-
-
-            // Send data to the server
-            // $.post('send_email.php', {
-            //     email: email,
-            //     subject: subject,
-            //     message: compiledMessage,
-            //     resume: resume
-            // }, function (response) {
-            //     if (response === 'success') {
-            //         // show success message
-            //         $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
-            //         $('.form-alert-container').addClass('active success')
-            //         // clear form
-            //         $('#email').val('');
-            //         $('#name').val('');
-            //         $('#tel').val('');
-            //         $('#interest').val('');
-            //         $('#message').val('');
-            //     } else {
-            //         // show error message
-            //         $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
-            //         $('.form-alert-container').addClass('active fail')
-            //     }
-
-            //     setTimeout(() => {
-            //         $('.form-alert-container').removeClass('active success fail alert');
-            //         $('.form-alert-container').empty();
-            //     }, 6000);
-            // });
-        }
-    });
 
 
     // Scroll reveal
@@ -240,3 +155,65 @@ $(document).ready(function () {
     ScrollReveal().reveal('.main-contact .section1 .single-counter:nth-child(2)', { ...slideUp, delay: 400 })
     ScrollReveal().reveal('.main-contact .section1 .single-counter:nth-child(3)', { ...slideUp, delay: 600 })
 });
+
+function sendEmail(token) {
+
+    if (!token) {
+        $('.form-alert-container').append('Recaptcha tidak sah.')
+        $('.form-alert-container').addClass('active alert')
+        return
+    }
+
+    // Collect form data
+    var email = $('#email').val();
+    var name = $('#name').val();
+    var phone = $('#tel').val();
+    var interest = $('#interest').val();
+    var message = $('#message').val();
+    var resume = $('#resume').prop('files');
+
+    if (!(email && name && phone && message && (interest !== null && interest !== '') && (resume.length !== 0))) {
+        $('.form-alert-container').append('Sila isi semua maklumat yang diperlukan.')
+        $('.form-alert-container').addClass('active alert')
+    } else {
+        var formData = new FormData();
+        formData.append("email", email);
+        formData.append("name", name);
+        formData.append("tel", phone);
+        formData.append("interest", interest);
+        formData.append("message", message);
+        formData.append("resume", $('[name="resume"]')[0].files[0]);
+
+        $.ajax({
+            url: "send_email.php",
+            data: formData,
+            type: 'POST',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                if (response === 'success') {
+                    // show success message
+                    $('.form-alert-container').append('Mesej telah berjaya dihantar. Terima Kasih.')
+                    $('.form-alert-container').addClass('active success')
+                    // clear form
+                    $('#email').val('');
+                    $('#name').val('');
+                    $('#tel').val('');
+                    $('#interest').val('');
+                    $('#message').val('');
+                    $('#resume').val('');
+                } else {
+                    // show error message
+                    $('.form-alert-container').append('Mesej tidak berjaya dihantar. Sila cuba sebentar lagi.')
+                    $('.form-alert-container').addClass('active fail')
+                }
+
+                setTimeout(() => {
+                    $('.form-alert-container').removeClass('active success fail alert');
+                    $('.form-alert-container').empty();
+                }, 6000);
+            }
+        })
+    }
+}

@@ -135,13 +135,15 @@ include 'component/header.php';
                     </div>
                     <textarea name="message" id="message" cols="30" rows="10" required placeholder="Sila beritahu kami sedikit tentang anda, mengapa anda sesuai dan bagaimana anda mendengarnya tentang kami."></textarea>
                     <div class="form-alert-container"></div>
-                    <button type="button" id="sendEmail">Hantar</button>
+                    <!-- <button type="button" id="sendEmail">Hantar</button> -->
+                    <div class="form-group full-width">
+                        <button class="g-recaptcha" data-sitekey="6Lc1GxwpAAAAAMUxjgGvi3CIWM7GJyAEMtPieQmC" data-callback='sendEmail' data-action='submit'>Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 </main>
-
 <script>
     $(document).ready(function() {
         // Carousel
