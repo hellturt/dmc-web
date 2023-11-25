@@ -12,7 +12,7 @@ include 'component/header.php';
                 <p>
                     Quick Cash ialah perkhidmatan yang membantu anda mendapatkan bantuan kewangan secara <b>CEPAT</b>, <b>MUDAH</b>, dan <b>TELUS</b>.
                 </p>
-                <a class='btn-main' href="#">Info Lanjut</a>
+                <!-- <a class='btn-main' href="#">Info Lanjut</a> -->
             </div>
         </div>
     </section>
