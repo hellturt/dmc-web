@@ -110,7 +110,7 @@ include 'component/header.php';
                 </div> -->
             </div>
 
-            <a href="registration" class='btn-main xl'>Daftar Sekarang</a>
+            <a href="https://dmcfincap.com/registration/" target="_blank" class='btn-main xl'>Daftar Sekarang</a>
         </div>
     </section>
 </main>
