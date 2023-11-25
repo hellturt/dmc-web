@@ -57,7 +57,7 @@
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/news") ? "current-menu-item" : "" ?>"><a href="news">Berita</a></li>
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/career") ? "current-menu-item" : "" ?>"><a href="career">Kerjaya</a></li>
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/contact") ? "current-menu-item" : "" ?>"><a href="contact">Hubungi Kami</a></li>
-                        <li class="menu-item"><a href="registration" target="_blank">Daftar Sekarang</a></li>
+                        <li class="menu-item"><a href="./registration" target="_blank">Daftar Sekarang</a></li>
                     </ul>
                 </div>
             </nav>
