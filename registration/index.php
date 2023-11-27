@@ -223,7 +223,7 @@ $dotenv->load();
                                             </label>
 
                                             <div class="mb-5">
-                                                <input x-model="formData.ic_number" type="text" class="form-control form-control-solid" placeholder="e.g: 781512115242" style="background-color: #eeeeee" />
+                                                <input x-model="formData.ic_number" type="number" max="12" class="form-control form-control-solid" placeholder="e.g: 781512115242" style="background-color: #eeeeee" />
                                                 <div class="p-1 error-text" x-show="errors['ic_no']">Sila masukkan NRIC anda</div>
                                             </div>
                                         </div>
@@ -231,7 +231,7 @@ $dotenv->load();
                                         <div class="col-lg-6">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3">IC lama / Polis / Tentera</label>
                                             <div class="mb-5">
-                                                <input type="text" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" />
+                                                <input type="number" max="6" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" />
                                             </div>
 
                                         </div>
@@ -257,7 +257,7 @@ $dotenv->load();
                                         <div class="col-lg-6">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required">Emel</label>
                                             <div class="mb-5">
-                                                <input x-model="formData.email" type="email" class="form-control form-control-solid" placeholder="e.g: hamka_hamzah@2ndhope.my" style="background-color: #eeeeee" />
+                                                <input x-model="formData.email" type="email" class="form-control form-control-solid" placeholder="e.g: sample@gmail.com" style="background-color: #eeeeee" />
                                                 <div class="p-1 error-text" x-show="errors['email']">Sila masukkan email anda</div>
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@ $dotenv->load();
 
                                     <div class="fv-row mb-10">
                                         <label class="form-label required">Alamat</label>
-                                        <input x-model="formData.address" class="form-control form-control-lg form-control-solid" value="" style="background-color: #eeeeee" />
+                                        <input x-model="formData.address" class="form-control form-control-lg form-control-solid" value="" style="background-color: #eeeeee" placeholder="e.g: No. 11, Jalan Melawati 3/5, Taman Melawati" />
                                         <div class="p-1 error-text" x-show="errors['address']">Sila masukkan alamat anda</div>
 
                                     </div>
@@ -275,20 +275,20 @@ $dotenv->load();
                                         <div class="col-lg-4">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required">Poskod</label>
                                             <div class="mb-5">
-                                                <input name="postcode" @input.debounce="getCityState($event)" type="text" class="form-control form-control-solid" placeholder="" style="background-color: #eeeeee" />
+                                                <input name="postcode" @input.debounce="getCityState($event)" type="text" class="form-control form-control-solid" placeholder="e.g: 53100" style="background-color: #eeeeee" />
                                                 <div class="p-1 error-text" x-show="errors['postcode']">Sila masukkan poskod/ poskod anda tidak tepat</div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required ">Bandar</label>
                                             <div class="mb-5">
-                                                <input x-model="city_name" type="text" class="form-control form-control-solid" placeholder="" style="background-color: #eeeeee" readonly />
+                                                <input x-model="city_name" type="text" class="form-control form-control-solid" placeholder="e.g: Ampang Jaya" style="background-color: #eeeeee" readonly />
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required">Negeri</label>
                                             <div class="mb-5">
-                                                <input x-model="state" type="text" class="form-control form-control-solid" placeholder="" style="background-color: #eeeeee" readonly />
+                                                <input x-model="state" type="text" class="form-control form-control-solid" placeholder="e.g: W.P. Kuala Lumpur" style="background-color: #eeeeee" readonly />
                                             </div>
                                         </div>
                                     </div>
