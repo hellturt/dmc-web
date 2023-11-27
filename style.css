@@ -1697,6 +1697,10 @@ a.btn-main.xl {
 }
 
 @media (max-width: 768px) {
+	.main-home section.cta-secondHope .container {
+		display: flex;
+		align-items: center;
+	}
 	.main-home section.cta-news {
 		height: auto;
 		margin-bottom: 0;

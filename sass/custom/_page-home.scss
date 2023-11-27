@@ -379,6 +379,13 @@
     }
 
     @media (max-width: 768px) {
+        section.cta-secondHope {
+            .container {
+                display: flex;
+                align-items: center;
+            }
+        }
+
         section.cta-news {
             height: auto;
             margin-bottom: 0;
