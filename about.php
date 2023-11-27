@@ -82,6 +82,13 @@ include 'component/header.php';
                     </div>
                     <img src="img/leader/NikKhairolazuman.jpg" alt="">
                 </div>
+                <div class="single">
+                    <div class="details">
+                        <h3>Noor Muzammil Norhalim</h3>
+                        <p>Ketua Pegawai Teknologi</p>
+                    </div>
+                    <img src="img/leader/NikKhairolazuman.jpg" alt="">
+                </div>
             </div>
 
             <h2>Pengurusan</h2>
@@ -125,6 +132,13 @@ include 'component/header.php';
                     <div class="details">
                         <h3>Nurul Fadzlinda Ibrahim</h3>
                         <p>Penasihat Undang-Undang & Setiausaha Syarikat</p>
+                    </div>
+                    <img src="img/leader/Linda.jpg" alt="">
+                </div>
+                <div class="single">
+                    <div class="details">
+                        <h3>S. Naraenthiran</h3>
+                        <p>Telemarketing Manager</p>
                     </div>
                     <img src="img/leader/Linda.jpg" alt="">
                 </div>
