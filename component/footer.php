@@ -29,8 +29,7 @@
                 <div class="support-container">
                     <img src="img/support1.png" alt="">
                     <img src="img/support2.png" alt="">
-                    <img src="img/support3.png" alt="">
-                    <img src="img/support4.png" alt="">
+                    <img src="img/support5.png" alt="">
                 </div>
 
                 <h3>Ikuti kami</h3>

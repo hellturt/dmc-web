@@ -1289,14 +1289,20 @@ a.btn-main.xl {
 
 .site-footer .support-container {
 	display: flex;
+	align-items: center;
 	gap: 16px;
 	margin: 10px 0 20px;
 }
 
 .site-footer .support-container img {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: auto;
 	display: block;
+}
+
+.site-footer .support-container img:last-child {
+	width: 160px;
+	height: auto;
 }
 
 .site-footer .social-container a {

@@ -83,11 +83,11 @@ include 'component/header.php';
                     <h3>Kewangan</h3>
                 </div>
                 <div class="single-team">
-                    <img src="img/career-hr.jpg" alt="">
+                    <img src="img/career-sumber-manusia.jpg" alt="">
                     <h3>Sumber Manusia</h3>
                 </div>
                 <div class="single-team">
-                    <img src="img/career-hr.jpg" alt="">
+                    <img src="img/career-process-credit.jpg" alt="">
                     <h3>Pemprosesan Kredit</h3>
                 </div>
                 <div class="single-team">
