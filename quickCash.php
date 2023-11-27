@@ -77,7 +77,7 @@ include 'component/header.php';
                 <div><img src="img/caret-right.svg" alt=""></div>
                 <div>
                     <p>Sila download contoh kadar bayaran bulanan & kadar interest rate</p>
-                    <a class='btn-main' href="#">Bayaran Bulanan.PDF</a>
+                    <a class='btn-main' href="docs/timetable-tenure.pdf" target="_blank">Bayaran Bulanan.PDF</a>
                 </div>
             </div>
 
