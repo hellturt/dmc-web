@@ -12,7 +12,7 @@ include 'component/header.php';
                 <p>
                     DMC Fincap Sdn Bhd merupakan satu syarikat teknologi kewangan yang telah ditubuhkan pada tahun 2021 di Malaysia
                 </p>
-                <a class='btn-main xl' href="secondHope">Info Lanjut</a>
+                <a class='btn-main xl' href="about">Info Lanjut</a>
             </div>
 
             <div class='column'>
