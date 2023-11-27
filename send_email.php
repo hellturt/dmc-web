@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= chunk_split(base64_encode(file_get_contents($resumeTmpName))) . "\r\n";
 
     // Send email
-    $mailResult = mail('admin@dotme.com.my', $subject, $body, $headers);
+    $mailResult = mail('hr@dmcfincap.com.my', $subject, $body, $headers);
 
     // Display response message
     if ($mailResult) {
