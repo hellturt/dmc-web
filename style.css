@@ -1252,6 +1252,7 @@ a.btn-main.xl {
 	display: block;
 	width: 100%;
 	height: auto;
+	opacity: .6;
 }
 
 .site-footer {

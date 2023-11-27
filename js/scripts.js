@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.icon-ornament').hide()
+    // $('.icon-ornament').hide()
 
     // modal
     let closeState = sessionStorage.getItem("modal-close");
@@ -38,14 +38,14 @@ $(document).ready(function () {
 
 
     // DMC Icon
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 100) {
-            $('.icon-ornament').fadeIn();
-        } else {
-            $('.icon-ornament').fadeOut();
-        }
-    });
+    // $(document).scroll(function () {
+    //     var y = $(this).scrollTop();
+    //     if (y > 100) {
+    //         $('.icon-ornament').fadeIn();
+    //     } else {
+    //         $('.icon-ornament').fadeOut();
+    //     }
+    // });
 
 
 
