@@ -28,11 +28,11 @@ include 'component/header.php';
         </div>
     </section>
 
-    <section class="video-section">
+    <!-- <section class="video-section">
         <div class="container">
             <iframe width="100%" src="https://www.youtube.com/embed/n9LgeoJE4EI?si=nhCKPt3SZI4H6iuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-    </section>
+    </section> -->
 
     <section class='second-hope-content'>
         <div class='container'>
