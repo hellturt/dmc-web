@@ -8,7 +8,7 @@ include 'component/header.php';
     <section class='cta-secondHope'>
         <div class='container'>
             <div class='column column-content'>
-                <h1>Harapan Kedua Pembiayaan Tidak Berbayar</h1>
+                <h1>DMC Fincap Sdn Bhd</h1>
                 <p>
                     DMC Fincap Sdn Bhd merupakan satu syarikat teknologi kewangan yang telah ditubuhkan pada tahun 2021 di Malaysia
                 </p>
