@@ -2387,6 +2387,12 @@ a.btn-main.xl {
 	border: 1px solid #aaa;
 }
 
+.main-career section.section-form .email-note {
+	margin: 0;
+	font-style: italic;
+	opacity: .8;
+}
+
 .main-career section.section-form .form-alert-container {
 	display: none;
 	padding: 10px;

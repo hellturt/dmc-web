@@ -31,31 +31,31 @@ include 'component/header.php';
                 <div class="single-content">
                     <h2>Pelanggan Pertama</h2>
                     <p>
-                        Keutamaan utama kami ialah mengutamakan pelanggan dan keperluan mereka. Kami sentiasa bersedia dan bersedia meluangkan masa untuk pelanggan dan rakan sekerja kami.
+                        Keutamaan utama kami ialah mengutamakan pelanggan dan keperluan mereka. Kami sentiasa bersedia dan bersedia meluangkan masa untuk pelanggan dan rakan sekerja kami
                     </p>
                 </div>
                 <div class="single-content">
                     <h2>Hormat</h2>
                     <p>
-                        2 We put our customers and their needs first. We're always prepared to make time for our customers and each other
+                        Mengamalkan piawaian etika tertinggi, bertindak dengan jujur, adil, dan berintegriti dalam semua aspek kerja
                     </p>
                 </div>
                 <div class="single-content">
                     <h2>Cepat</h2>
                     <p>
-                        3 We put our customers and their needs first. We're always prepared to make time for our customers and each other
+                        Berusaha untuk menghasilkan kerja yang bermutu tinggi secara konsisten, melebihi jangkaan dan memberikan hasil bermutu
                     </p>
                 </div>
                 <div class="single-content">
                     <h2>Semangat Berpasukan</h2>
                     <p>
-                        4 We put our customers and their needs first. We're always prepared to make time for our customers and each other
+                        Memupuk semangat kerjasama, secara aktif menyumbang kepada usaha pasukan, dan menyokong rakan sekerja dalam mencapai matlamat bersama
                     </p>
                 </div>
                 <div class="single-content">
                     <h2>Semangat</h2>
                     <p>
-                        5 We put our customers and their needs first. We're always prepared to make time for our customers and each other
+                        Sentiasa bersikap positif, menunjukkan daya tahan dalam menghadapi cabaran. Bersama-sama, kita dapat mencapai perkara yang hebat
                     </p>
                 </div>
             </div>
@@ -132,6 +132,7 @@ include 'component/header.php';
                     <div class="form-group full-width">
                         <label for="resume">Muat Naik Resume (PDF/Word):*</label>
                         <input type="file" id="resume" name="resume" accept=".doc,.docx,.xml,.pdf,application/msword,application/pdf" required>
+                        <p class="email-note">Sila hantar resume anda ke emel <a href="mailto:hr@dmcfincap.com">hr@dmcfincap.com</a></p>
                     </div>
                     <textarea name="message" id="message" cols="30" rows="10" required placeholder="Sila beritahu kami sedikit tentang anda, mengapa anda sesuai dan bagaimana anda mendengarnya tentang kami."></textarea>
                     <div class="form-alert-container"></div>

@@ -64,18 +64,18 @@ include 'component/header.php';
     <section class='cta-news'>
         <div class='container'>
             <div class='news-container'>
-                <div class='single-news' style="background-image: url('img/home-news-bg-1.jpg');">
+                <a href="news" class='single-news' style="background-image: url('img/home-news-bg-1.jpg');">
                     <p><span>Pakar Nasihat</span> Kewangan Yang Bertauliah.</p>
                     <img src="img/caret-right.svg" alt="">
-                </div>
-                <div class='single-news' style="background-image: url('img/home-news-bg-2.jpg');">
+                </a>
+                <a href="news" class='single-news' style="background-image: url('img/home-news-bg-2.jpg');">
                     <p><span>Masa Hadapan</span> Yang Lebih Terjamin.</p>
                     <img src="img/caret-right.svg" alt="">
-                </div>
-                <div class='single-news' style="background-image: url('img/home-news-bg-3.jpg');">
+                </a>
+                <a href="news" class='single-news' style="background-image: url('img/home-news-bg-3.jpg');">
                     <p><span>Manfaat Menyertai</span> Program Second Hope</p>
                     <img src="img/caret-right.svg" alt="">
-                </div>
+                </a>
             </div>
 
             <div class='header'>

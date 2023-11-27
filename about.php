@@ -138,7 +138,7 @@ include 'component/header.php';
                 <div class="single">
                     <div class="details">
                         <h3>S. Naraenthiran</h3>
-                        <p>Telemarketing Manager</p>
+                        <p>Pengurus Tele Pemasaran</p>
                     </div>
                     <img src="img/leader/Linda.jpg" alt="">
                 </div>
