@@ -37,12 +37,12 @@ switch ($event->type) {
     case 'checkout.session.completed':
         $session = $event->data->object;
         $status = 0;
-        if ($session->status == 'succeeded') {
+        if ($session->status == 'complete') {
             $status = 1;
         }
         $data = array(
             "payment_ref" =>  $session->payment_intent,
-            "amount_total" => $session->amount_total,
+            "amount_total" => $session->amount_total / 100,
             "status" => $status,
         );
 
