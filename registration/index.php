@@ -26,7 +26,17 @@ $dotenv->load();
     <script defer src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.3.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script>
+        jQuery($ => {
+            let $inputs = $('input').on('input', e => {
+                let $input = $(e.target);
+                let index = $inputs.index($input);
+                if ($input.val().length === $input.prop('maxlength')) {
+                $inputs.eq(index + 1).focus();
+                }
+            });
+        });
+    </script>
     <style>
         .error-text {
             color: red;
@@ -211,7 +221,7 @@ $dotenv->load();
 
                                     </div>
                                     <div class="row gx-10 mb-5">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-12  fv-row">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required">NRIC
                                                 <span class="ms-1" data-bs-toggle="tooltip" title="Please enter new IC number without dash '-'">
                                                     <i class="ki-duotone ki-information-5 text-gray-500 fs-6">
@@ -222,20 +232,37 @@ $dotenv->load();
                                                 </span>
                                             </label>
 
-                                            <div class="mb-5">
-                                                <input x-model="formData.ic_number" type="number" max="12" class="form-control form-control-solid" placeholder="e.g: 781512115242" style="background-color: #eeeeee" />
-                                                <div class="p-1 error-text" x-show="errors['ic_no']">Sila masukkan NRIC anda</div>
+                                             <div class="row fv-row">
+                                                <!--begin::Col-->
+                                                <div class="col-5">
+                                                    <input x-model="formData.ic_number1" type="number" maxlength="6" class="form-control form-control-solid" placeholder="eg: 881224" style="background-color: #eeeeee" onKeyPress="if(this.value.length==6) return false;"/>
+                                                    <div class="p-1 error-text" x-show="errors['ic_no']">Sila masukkan NRIC anda</div>
+                                                </div>
+                                                <div class="col-1"><label class="form-label fs-6 fw-bold text-gray-700 mb-1" style="padding: 10px 10px;">-</label></div>
+                                                <div class="col-2">
+                                                    <input x-model="formData.ic_number2" type="number" maxlength="2" class="form-control form-control-solid" placeholder="eg: 04" style="background-color: #eeeeee" onKeyPress="if(this.value.length==2) return false;"/>
+                                                </div>
+                                                <div class="col-1"><label class="form-label fs-6 fw-bold text-gray-700 mb-1" style="padding: 10px 0;">-</label></div>
+                                                <div class="col-3">
+                                                    <input x-model="formData.ic_number3" type="number" maxlength="4" class="form-control form-control-solid" placeholder="eg: 5211" style="background-color: #eeeeee" onKeyPress="if(this.value.length==4) return false;" />
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-6">
-                                            <label class="form-label fs-6 fw-bold text-gray-700 mb-3">IC lama / Polis / Tentera</label>
-                                            <div class="mb-5">
-                                                <input type="number" max="6" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" />
+                                    </div>
+                                    <div class="row gx-10 mb-5">
+                                         <div class="col-lg-12">
+                                            <label class="form-label fs-6 fw-bold text-gray-700 mb-3">Old IC / Police / Army</label>
+                                            <div class="row fv-row">
+                                                <!--begin::Col-->
+                                                <div class="col-4">
+                                                    <input type="text" class="form-control form-control-solid" placeholder="e.g: AA" style="background-color: #eeeeee" maxlength="2"/>
+                                                </div>
+                                                 <div class="col-8">
+                                                    <input type="number" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" onKeyPress="if(this.value.length==6) return false;"/>
+                                                </div>
                                             </div>
 
                                         </div>
-
                                     </div>
                                     <div class="row gx-10 mb-5">
                                         <div class="col-lg-6">
