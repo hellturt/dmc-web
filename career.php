@@ -138,7 +138,7 @@ include 'component/header.php';
                     <div class="form-alert-container"></div>
                     <!-- <button type="button" id="sendEmail">Hantar</button> -->
                     <div class="form-group full-width">
-                        <button class="g-recaptcha" data-sitekey="6Lc1GxwpAAAAAMUxjgGvi3CIWM7GJyAEMtPieQmC" data-callback='sendEmail' data-action='submit'>Submit</button>
+                        <button class="g-recaptcha" data-sitekey="6Lc1GxwpAAAAAMUxjgGvi3CIWM7GJyAEMtPieQmC" data-callback='sendEmail' data-action='submit'>Hantar</button>
                     </div>
                 </form>
             </div>
