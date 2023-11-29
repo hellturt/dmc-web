@@ -170,7 +170,7 @@ $dotenv->load();
                 <div class="d-flex flex-center flex-column flex-column-fluid">
                     <div class="w-lg-650px w-xl-700px p-10 p-lg-15 mx-auto">
 
-                        <form @submit.prevent="submit" class="my-auto pb-5" id="kt_create_account_form">
+                        <form @submit.prevent="submit" class="my-auto pb-5" id="kt_create_account_form" novalidate>
                             <div :class="{ 'current': current_step==0 }" data-kt-stepper-element="content">
                                 <div class="w-100">
                                     <div class="row gx-10 mb-5">
