@@ -1884,6 +1884,7 @@ a.btn-main.xl {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	min-height: 100px;
 	padding: 20px;
 	color: #fff;
 	background-color: rgba(243, 169, 57, 0.75);

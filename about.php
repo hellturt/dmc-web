@@ -87,7 +87,7 @@ include 'component/header.php';
                         <h3>Noor Muzammil Norhalim</h3>
                         <p>Ketua Pegawai Teknologi</p>
                     </div>
-                    <img src="img/leader/placeholder.jpg" alt="">
+                    <img src="img/leader/MuzammilNorhalim.jpg" alt="">
                 </div>
             </div>
 
@@ -140,7 +140,7 @@ include 'component/header.php';
                         <h3>S. Naraenthiran</h3>
                         <p>Pengurus Tele Pemasaran</p>
                     </div>
-                    <img src="img/leader/placeholder.jpg" alt="">
+                    <img src="img/leader/Naraenthiran.jpg" alt="">
                 </div>
             </div>
         </div>
