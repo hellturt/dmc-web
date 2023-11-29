@@ -230,7 +230,7 @@ $dotenv->load();
                                             </label>
 
                                             <div class="mb-5">
-                                                <input id="ic_number" x-model="formData.ic_number" class="form-control form-control-solid" placeholder="880413-04-1234" title="880413-04-1234" input-mask="______-__-____" style="background-color: #eeeeee">
+                                                <input id="ic_number" x-model="formData.ic_number" class="form-control form-control-solid" placeholder="880413041234" title="880413041234" input-mask="______-__-____" style="background-color: #eeeeee">
                                                 <script>
                                                     function InputMask(element) {
                                                         var self = this;
