@@ -129,8 +129,9 @@ $(document).ready(function () {
     ScrollReveal().reveal('.main-about .section3 .single:nth-child(2)', { ...slideUp, delay: 300 })
     ScrollReveal().reveal('.main-about .section3 .single:nth-child(3)', { ...slideUp, delay: 400 })
     ScrollReveal().reveal('.main-about .section3 .single:nth-child(4)', { ...slideUp, delay: 500 })
-    ScrollReveal().reveal('.main-about .section3 .single:nth-child(5)', { ...slideUp, delay: 600 })
-    ScrollReveal().reveal('.main-about .section3 .single:nth-child(6)', { ...slideUp, delay: 700 })
+    ScrollReveal().reveal('.main-about .section3 .single:nth-child(5)', { ...slideUp, delay: 200 })
+    ScrollReveal().reveal('.main-about .section3 .single:nth-child(6)', { ...slideUp, delay: 300 })
+    ScrollReveal().reveal('.main-about .section3 .single:nth-child(7)', { ...slideUp, delay: 400 })
     ScrollReveal().reveal('.main-about .section4 .content', slideRight)
 
     // News
