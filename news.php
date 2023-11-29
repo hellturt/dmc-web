@@ -11,7 +11,7 @@ include 'component/header.php';
 
             <div class="details-container">
                 <div class="content">
-                    <h2>Kebaikan Meyertai Program Harapan Kedua</h2>
+                    <h2>Kebaikan Menyertai Program Harapan Kedua</h2>
                     <p>
                         Program Harapan kedua menawarkan penyelesaian menyeluruh untuk individu yang telah disenaraihitamkan oleh Institusi Kewangan, membantu mereka membina kehidupan yang stabil melalui pengurusan kewangan yang berkesan.
                     </p>
