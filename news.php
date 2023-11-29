@@ -7,7 +7,7 @@ include 'component/header.php';
 <main id="primary" class="site-main main-news">
     <section class="header">
         <div class="container">
-            <h1>Mewujudkan Masa Depan Kewangan yang Influsif</h1>
+            <h1>Mewujudkan Masa Depan Kewangan yang Inklusif</h1>
 
             <div class="details-container">
                 <div class="content">
