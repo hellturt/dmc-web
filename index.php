@@ -18,7 +18,7 @@ include 'component/header.php';
             <div class='column'>
             </div>
         </div>
-        <video playsinline autoplay muted loop poster="video-bg.jpg" id="bgvid">
+        <video playsinline autoplay muted loop poster="img/video-bg.jpg" id="bgvid">
             <source src="video/video_bg.webm" type="video/webm">
             <source src="video/video_bg.mp4" type="video/mp4">
         </video>
