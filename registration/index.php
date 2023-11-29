@@ -53,12 +53,12 @@ $dotenv->load();
             opacity: 100;
         }
 
-        input[type=number]::-webkit-inner-spin-button, 
-        input[type=number]::-webkit-outer-spin-button { 
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-                 margin: 0; 
+            margin: 0;
         }
     </style>
 
@@ -217,7 +217,7 @@ $dotenv->load();
                                         <div class="p-1 error-text" x-show="errors['name']">Sila masukkan nama penuh anda</div>
 
                                     </div>
-                                 <div class="row gx-10 mb-5">
+                                    <div class="row gx-10 mb-5">
                                         <div class="col-lg-6">
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3 required">NRIC
                                                 <span class="ms-1" data-bs-toggle="tooltip" title="Please enter new IC number without dash '-'">
@@ -229,77 +229,273 @@ $dotenv->load();
                                                 </span>
                                             </label>
 
-                                             <div class="mb-5">
-                                                 <input id="ic_number" x-model="formData.ic_number" class="form-control form-control-solid" style="background-color: #eeeeee" placeholder="880313-04-5110"  title="e.g 880313-04-5110" pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$" required="required">
-                                                 <div class="p-1 error-text" x-show="errors['ic_no']">Sila masukkan NRIC anda</div>
-                                                 <script>
-                                                    /**
-                                                     * charCode [48,57]     Numbers 0 to 9
-                                                     * keyCode 46           "delete"
-                                                     * keyCode 9            "tab"
-                                                     * keyCode 13           "enter"
-                                                     * keyCode 116          "F5"
-                                                     * keyCode 8            "backscape"
-                                                     * keyCode 37,38,39,40  Arrows
-                                                     * keyCode 10           (LF)
-                                                     */
-                                                    function validate_int(myEvento) {
-                                                      if ((myEvento.charCode >= 48 && myEvento.charCode <= 57) || myEvento.keyCode == 9 || myEvento.keyCode == 10 || myEvento.keyCode == 13 || myEvento.keyCode == 8 || myEvento.keyCode == 116 || myEvento.keyCode == 46 || (myEvento.keyCode <= 40 && myEvento.keyCode >= 37)) {
-                                                        dato = true;
-                                                      } else {
-                                                        dato = false;
-                                                      }
-                                                      return dato;
-                                                    }
-                                                    
-                                                    function phone_number_mask() {
-                                                      var myMask = "______-__-____";
-                                                      var myCaja = document.getElementById("ic_number");
-                                                      var myText = "";
-                                                      var myNumbers = [];
-                                                      var myOutPut = ""
-                                                      var theLastPos = 1;
-                                                      myText = myCaja.value;
-                                                      //get numbers
-                                                      for (var i = 0; i < myText.length; i++) {
-                                                        if (!isNaN(myText.charAt(i)) && myText.charAt(i) != " ") {
-                                                          myNumbers.push(myText.charAt(i));
+                                            <div class="mb-5">
+                                                <input id="ic_number" x-model="formData.ic_number" class="form-control form-control-solid" placeholder="880413-04-1234" title="880413-04-1234" input-mask="______-__-____" style="background-color: #eeeeee">
+                                                <script>
+                                                    function InputMask(element) {
+                                                        var self = this;
+
+                                                        self.element = element;
+
+                                                        self.mask = element.attributes["input-mask"].nodeValue;
+
+                                                        self.inputBuffer = "";
+
+                                                        self.cursorPosition = 0;
+
+                                                        self.bufferCursorPosition = 0;
+
+                                                        self.dataLength = getDataLength();
+
+                                                        function getDataLength() {
+                                                            var ret = 0;
+
+                                                            for (var i = 0; i < self.mask.length; i++) {
+                                                                if (self.mask.charAt(i) == "_") {
+                                                                    ret++;
+                                                                }
+                                                            }
+
+                                                            return ret;
                                                         }
-                                                      }
-                                                      //write over mask
-                                                      for (var j = 0; j < myMask.length; j++) {
-                                                        if (myMask.charAt(j) == "_") { //replace "_" by a number 
-                                                          if (myNumbers.length == 0)
-                                                            myOutPut = myOutPut + myMask.charAt(j);
-                                                          else {
-                                                            myOutPut = myOutPut + myNumbers.shift();
-                                                            theLastPos = j + 1; //set caret position
-                                                          }
-                                                        } else {
-                                                          myOutPut = myOutPut + myMask.charAt(j);
+
+                                                        self.keyEventHandler = function(obj) {
+                                                            obj.preventDefault();
+
+                                                            self.updateBuffer(obj);
+                                                            self.manageCursor(obj);
+                                                            self.render();
+                                                            self.moveCursor();
                                                         }
-                                                      }
-                                                      document.getElementById("ic_number").value = myOutPut;
-                                                      document.getElementById("ic_number").setSelectionRange(theLastPos, theLastPos);
+
+                                                        self.updateBufferPosition = function() {
+                                                            var selectionStart = self.element.selectionStart;
+                                                            self.bufferCursorPosition = self.displayPosToBufferPos(selectionStart);
+                                                            console.log("self.bufferCursorPosition==" + self.bufferCursorPosition);
+                                                        }
+
+                                                        self.onClick = function() {
+                                                            self.updateBufferPosition();
+                                                        }
+
+                                                        self.updateBuffer = function(obj) {
+                                                            if (obj.keyCode == 8) {
+                                                                self.inputBuffer = self.inputBuffer.substring(0, self.bufferCursorPosition - 1) + self.inputBuffer.substring(self.bufferCursorPosition);
+                                                            } else if (obj.keyCode == 46) {
+                                                                self.inputBuffer = self.inputBuffer.substring(0, self.bufferCursorPosition) + self.inputBuffer.substring(self.bufferCursorPosition + 1);
+                                                            } else if (obj.keyCode >= 37 && obj.keyCode <= 40) {
+                                                                //do nothing on cursor keys.
+                                                            } else {
+                                                                var selectionStart = self.element.selectionStart;
+                                                                var bufferCursorPosition = self.displayPosToBufferPos(selectionStart);
+                                                                self.inputBuffer = self.inputBuffer.substring(0, bufferCursorPosition) + String.fromCharCode(obj.which) + self.inputBuffer.substring(bufferCursorPosition);
+                                                                if (self.inputBuffer.length > self.dataLength) {
+                                                                    self.inputBuffer = self.inputBuffer.substring(0, self.dataLength);
+                                                                }
+                                                            }
+                                                        }
+
+                                                        self.manageCursor = function(obj) {
+                                                            console.log(obj.keyCode);
+                                                            if (obj.keyCode == 8) {
+                                                                self.bufferCursorPosition--;
+                                                            } else if (obj.keyCode == 46) {
+                                                                //do nothing on delete key.
+                                                            } else if (obj.keyCode >= 37 && obj.keyCode <= 40) {
+                                                                if (obj.keyCode == 37) {
+                                                                    self.bufferCursorPosition--;
+                                                                } else if (obj.keyCode == 39) {
+                                                                    self.bufferCursorPosition++;
+                                                                }
+                                                            } else {
+                                                                var bufferCursorPosition = self.displayPosToBufferPos(self.element.selectionStart);
+                                                                self.bufferCursorPosition = bufferCursorPosition + 1;
+                                                            }
+                                                        }
+
+                                                        self.setCursorByBuffer = function(bufferCursorPosition) {
+                                                            var displayCursorPos = self.bufferPosToDisplayPos(bufferCursorPosition);
+                                                            self.element.setSelectionRange(displayCursorPos, displayCursorPos);
+                                                        }
+
+                                                        self.moveCursor = function() {
+                                                            self.setCursorByBuffer(self.bufferCursorPosition);
+                                                        }
+
+                                                        self.render = function() {
+                                                            var bufferCopy = self.inputBuffer;
+                                                            var ret = {
+                                                                muskifiedValue: ""
+                                                            };
+
+                                                            var lastChar = 0;
+
+                                                            for (var i = 0; i < self.mask.length; i++) {
+                                                                if (self.mask.charAt(i) == "_" &&
+                                                                    bufferCopy) {
+                                                                    ret.muskifiedValue += bufferCopy.charAt(0);
+                                                                    bufferCopy = bufferCopy.substr(1);
+                                                                    lastChar = i;
+                                                                } else {
+                                                                    ret.muskifiedValue += self.mask.charAt(i);
+                                                                }
+                                                            }
+
+                                                            self.element.value = ret.muskifiedValue;
+
+                                                        }
+
+                                                        self.preceedingMaskCharCount = function(displayCursorPos) {
+                                                            var lastCharIndex = 0;
+                                                            var ret = 0;
+
+                                                            for (var i = 0; i < self.element.value.length; i++) {
+                                                                if (self.element.value.charAt(i) == "_" ||
+                                                                    i > displayCursorPos - 1) {
+                                                                    lastCharIndex = i;
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            if (self.mask.charAt(lastCharIndex - 1) != "_") {
+                                                                var i = lastCharIndex - 1;
+                                                                while (self.mask.charAt(i) != "_") {
+                                                                    i--;
+                                                                    if (i < 0) break;
+                                                                    ret++;
+                                                                }
+                                                            }
+
+                                                            return ret;
+                                                        }
+
+                                                        self.leadingMaskCharCount = function(displayIndex) {
+                                                            var ret = 0;
+
+                                                            for (var i = displayIndex; i >= 0; i--) {
+                                                                if (i >= self.mask.length) {
+                                                                    continue;
+                                                                }
+                                                                if (self.mask.charAt(i) != "_") {
+                                                                    ret++;
+                                                                }
+                                                            }
+
+                                                            return ret;
+                                                        }
+
+                                                        self.bufferPosToDisplayPos = function(bufferIndex) {
+                                                            var offset = 0;
+                                                            var indexInBuffer = 0;
+
+                                                            for (var i = 0; i < self.mask.length; i++) {
+                                                                if (indexInBuffer > bufferIndex) {
+                                                                    break;
+                                                                }
+
+                                                                if (self.mask.charAt(i) != "_") {
+                                                                    offset++;
+                                                                    continue;
+                                                                }
+
+                                                                indexInBuffer++;
+                                                            }
+                                                            var ret = bufferIndex + offset;
+
+                                                            return ret;
+                                                        }
+
+                                                        self.displayPosToBufferPos = function(displayIndex) {
+                                                            var offset = 0;
+                                                            var indexInBuffer = 0;
+
+                                                            for (var i = 0; i < self.mask.length && i <= displayIndex; i++) {
+                                                                if (indexInBuffer >= self.inputBuffer.length) {
+                                                                    break;
+                                                                }
+
+                                                                if (self.mask.charAt(i) != "_") {
+                                                                    offset++;
+                                                                    continue;
+                                                                }
+
+                                                                indexInBuffer++;
+                                                            }
+
+                                                            return displayIndex - offset;
+                                                        }
+
+                                                        self.getValue = function() {
+                                                            return this.inputBuffer;
+                                                        }
+                                                        self.element.onkeypress = self.keyEventHandler;
+                                                        self.element.onclick = self.onClick;
                                                     }
-                                                    
-                                                    //document.getElementById("ic_number").onkeypress = validate_int;
-                                                    document.getElementById("ic_number").onkeyup = phone_number_mask;
-                                                      </script>
+
+                                                    function InputMaskManager() {
+                                                        var self = this;
+
+                                                        self.instances = {};
+
+                                                        self.add = function(id) {
+                                                            var elem = document.getElementById(id);
+                                                            var maskInstance = new InputMask(elem);
+                                                            self.instances[id] = maskInstance;
+                                                        }
+
+                                                        self.getValue = function(id) {
+                                                            return self.instances[id].getValue();
+                                                        }
+
+                                                        document.onkeydown = function(obj) {
+                                                            if (obj.target.attributes["input-mask"]) {
+                                                                if (obj.keyCode == 8 ||
+                                                                    obj.keyCode == 46 ||
+                                                                    (obj.keyCode >= 37 && obj.keyCode <= 40)) {
+
+                                                                    if (obj.keyCode == 8 || obj.keyCode == 46) {
+                                                                        obj.preventDefault();
+                                                                    }
+
+                                                                    //needs to broadcast to all instances here:
+                                                                    var keys = Object.keys(self.instances);
+                                                                    for (var i = 0; i < keys.length; i++) {
+                                                                        if (self.instances[keys[i]].element.id == obj.target.id) {
+                                                                            self.instances[keys[i]].keyEventHandler(obj);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    //Initialize an instance of InputMaskManager and
+                                                    //add masker instances by passing in the DOM ids
+                                                    //of each HTML counterpart.
+                                                    var maskMgr = new InputMaskManager();
+                                                    maskMgr.add("ic_number");
+
+                                                    function showValue_phone() {
+                                                        //-------------------------------------------------------__Value_Here_____
+                                                        document.getElementById("console_phone").value = maskMgr.getValue("ic_number");
+                                                    }
+                                                </script>
+                                                <div class="p-1 error-text" x-show="errors['ic_no']">Sila masukkan NRIC anda</div>
+
                                             </div>
                                         </div>
 
-                                    
-                                         <div class="col-lg-6">
-                                             
+
+                                        <div class="col-lg-6">
+
                                             <label class="form-label fs-6 fw-bold text-gray-700 mb-3">Old IC / Police / Army</label>
                                             <div class="row fv-row">
                                                 <!--begin::Col-->
                                                 <div class="col-4">
-                                                    <input type="text" x-model="formData.old_ic1" class="form-control form-control-solid" placeholder="e.g: AA" style="background-color: #eeeeee" maxlength="2"/>
+                                                    <input type="text" x-model="formData.old_ic1" class="form-control form-control-solid" placeholder="e.g: AA" style="background-color: #eeeeee" maxlength="2" />
                                                 </div>
                                                 <div class="col-8">
-                                                    <input type="number" x-model="formData.old_ic2" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" onKeyPress="if(this.value.length==6) return false;"/>
+                                                    <input type="number" x-model="formData.old_ic2" class="form-control form-control-solid" placeholder="e.g: 3006113" style="background-color: #eeeeee" onKeyPress="if(this.value.length==6) return false;" />
                                                 </div>
                                             </div>
 
@@ -1234,7 +1430,8 @@ $dotenv->load();
                     var f = new FormData()
                     for (var key in this.formData) {
                         if (this, this.formData.hasOwnProperty(key)) {
-                            f.append(key, this.formData[key]);
+                            const value = key === 'ic_number' ? Number(this.formData[key].replace(/[-_]/g, '')) : this.formData[key]
+                            f.append(key, value);
                         }
                     }
                     // Create a new Date object
