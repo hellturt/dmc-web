@@ -67,7 +67,7 @@ $dotenv->load();
 
 <body id="kt_body" class="app-blank">
 
-    <div class="d-flex flex-column flex-root" id="kt_app_root" x-data="data()" x-init="getEmploymentStatuses();getCompanies();select2Alpine()">
+    <div class="d-flex flex-column flex-root" id="kt_app_root" x-data="data()" x-init="getEmploymentStatuses();getCompanies();select2Alpine() ">
         <div class="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column stepper-multistep" id="kt_create_account_stepper">
             <div class="d-flex flex-column flex-lg-row-auto w-lg-350px w-xl-500px">
                 <div class="d-flex flex-column position-lg-fixed top-0 bottom-0 w-lg-350px w-xl-500px scroll-y bgi-size-cover bgi-position-center" style="background-color: #eaeaea">
@@ -200,7 +200,7 @@ $dotenv->load();
                                             <div class="text-muted fw-semibold fs-6">
                                                 Kempen/Ejen/Kod Rujukan (jika ada)
                                             </div>
-                                            <input x-model="formData.ref" name="agent_code" class="form-control form-control-lg form-control-solid" value="" style="background-color: #eeeeee" />
+                                            <input x-model="formData.ref" x-init="formData.ref = repopulateRef()" class="form-control form-control-lg form-control-solid" value="" style="background-color: #eeeeee" />
                                         </div>
                                     </div>
                                     <div class="fv-row mb-10">
@@ -975,6 +975,13 @@ $dotenv->load();
                     deduction_amount: ''
                 }],
                 attachment: null,
+                repopulateRef() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const paramValue = urlParams.get('ref');
+
+                    return paramValue
+
+                },
                 proceed() {
                     this.errors = {}
                     if (this.current_step == 0) {
