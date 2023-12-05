@@ -942,7 +942,7 @@ $dotenv->load();
                     ic_number: '',
                     contact_number: "",
                     email: "",
-                    postcode: "",
+                    user_postcode: "",
                     company_id: '',
                     contract: '',
                     loan_amount: 0,
@@ -983,7 +983,7 @@ $dotenv->load();
                         if (this.formData.contact_number == '') this.errors['contact_no'] = true;
                         if (this.formData.email == '') this.errors['email'] = true;
                         if (this.formData.address == '') this.errors['address'] = true;
-                        if (this.formData.postcode == '') this.errors['postcode'] = true;
+                        if (this.formData.user_postcode == '') this.errors['postcode'] = true;
                     }
                     if (this.current_step == 1) {
                         if (this.formData.contract == '') this.errors['contract'] = true;
@@ -1050,7 +1050,7 @@ $dotenv->load();
 
                 },
                 getCityState(event) {
-                    this.formData.postcode = ''
+                    this.formData.user_postcode = ''
                     fetch(`${HOST_NAME}/api/getCityAndStateByPostcode?code=${event.target.value}`)
                         .then(response => {
                             return response.json()
@@ -1059,7 +1059,7 @@ $dotenv->load();
                             if (!data) return
                             if (data.length == 0) return
                             let x = data[0]
-                            this.formData.postcode = event.target.value
+                            this.formData.user_postcode = event.target.value
                             this.city_name = x['city']['name']
                             this.state = x['state']['name']
                         })
