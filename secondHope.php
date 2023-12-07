@@ -17,7 +17,7 @@ include 'component/header.php';
             <div class='content'>
                 <h1>Apa Itu Program Harapan Kedua</h1>
                 <p>
-                    DMC FinCap telah memperkenalkan Program Harapan Kedua, yang bertujuan untuk membantu kakitangan kerajaan persekutuan, kerajaan negeri, dan syarikat berkaitan kerajaan (GL) tertentu yang telah disenaraihitamkan oleh Institusi Kewangan Malaysia.
+                    DMC FinCap telah memperkenalkan Program Harapan Kedua, yang bertujuan untuk membantu kakitangan kerajaan persekutuan, kerajaan negeri, dan syarikat berkaitan kerajaan (GLC) tertentu yang telah disenaraihitamkan oleh Institusi Kewangan Malaysia.
                 </p>
                 <br>
                 <h1>Harapan Kedua Yang Bermakna</h1>
