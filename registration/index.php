@@ -168,7 +168,7 @@ $dotenv->load();
 
                     <div class="d-flex flex-center flex-wrap px-5 py-10">
                         <div class="d-flex fw-normal">
-                            <a href="../contact.html" class="text-warning px-5" target="_blank">Hubungi Kami</a>
+                            <a href="https://dmcfincap.com/contact" class="text-warning px-5" target="_blank">Hubungi Kami</a>
                         </div>
                     </div>
                 </div>
