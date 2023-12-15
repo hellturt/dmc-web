@@ -102,10 +102,10 @@ include 'component/header.php';
                 </div>
                 <div class="single">
                     <div class="details">
-                        <h3>Mohd Hamizane Ariffin</h3>
+                        <h3>Syafiq Yahya</h3>
                         <p>Pengurus Operasi</p>
                     </div>
-                    <img src="img/leader/MohdHamizaneMohdAriffin.jpg" alt="">
+                    <img src="img/leader/Syafiq.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
