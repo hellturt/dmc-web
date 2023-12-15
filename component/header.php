@@ -69,6 +69,6 @@
             <button id="modal-close" type="button">
                 <iconify-icon icon="ep:close-bold"></iconify-icon>
             </button>
-            <a class='popup-clickaway' href="secondHope"><img src="img/popout-message.png" alt=""></a>
+            <a class='popup-clickaway' href="secondHope"><img src="img/Pop-out-Message-2.png" alt=""></a>
         </div>
     </div>
