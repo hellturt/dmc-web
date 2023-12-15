@@ -105,7 +105,7 @@ include 'component/header.php';
                         <h3>Syafiq Yahya</h3>
                         <p>Pengurus Operasi</p>
                     </div>
-                    <img src="img/leader/Syafiq.jpg" alt="">
+                    <img src="img/leader/syafiq1.jpg" alt="">
                 </div>
                 <div class="single">
                     <div class="details">
