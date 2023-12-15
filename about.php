@@ -37,7 +37,7 @@ include 'component/header.php';
                 <br>
                 <h2>Visi</h2>
                 <p>
-                    Kami berhasrat untuk sentiasa menambah baik sistem pengurusan kewangan untuk menjadikannya lebih mudah dan cekap sambil memastikannya selamat. Selain itu, kami berhasrat untuk mewujudkan komuniti yang positif dan inklusif melalui program kewangan sosial kami, Program Harapan Kedua.
+                    Kami berhasrat untuk sentiasa menambahbaik sistem pengurusan kewangan untuk menjadi lebih mudah dan cekap. Selain itu, kami berhasrat untuk mewujudkan komuniti yang positif dan inklusif melalui program kewangan sosial kami iaitu Program Peluang Kedua.
                 </p>
             </div>
             <div class="right" style="background-image: url('img/about-sect3-bg.jpg')">
