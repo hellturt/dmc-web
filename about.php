@@ -11,7 +11,7 @@ include 'component/header.php';
         </div>
         <div class="content">
             <p>
-                DMC FinCap Sdn Bhd, sebuah syarikat FinTech yang ditubuhkan di Malaysia pada 2021. Fokus kami adalah mencipta sistem aplikasi pembiayaan termaju untuk perniagaan dan mengubah proses pembiayaan dan kredit. Di samping itu, kami menyediakan Program Harapan Kedua, inisiatif kami untuk membantu individu yang telah disenaraihitamkan oleh Institusi Kewangan dalam meningkatkan status kredit mereka, membolehkan mereka mencari peluang pembiayaan baharu di Malaysia.
+                DMC Fincap Sdn Bhd merupakan sebuah syarikat FinTech yang ditubuhkan di Malaysia pada tahun 2021. Fokus kami adalah mencipta sistem aplikasi termaju untuk pernigaan serta mengubah proses pembiayaan dan kredit. Di samping itu, kami menyediakan Program Peluang Kedua iaitu inisiatif kami untuk membantu individu yang telah disenaraihitam oleh Institusi Kewangan Malaysia dalam meningkatkan status kredit mereka serta membolehkan mereka memohon pembiayaan baru dari bank di Malaysia.
             </p>
         </div>
     </section>
