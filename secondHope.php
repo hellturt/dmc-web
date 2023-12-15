@@ -8,7 +8,7 @@ include 'component/header.php';
     <section class='header'>
         <div class='img-carousel-container'>
             <div class='label'>
-                <img src="img/logo-harapan-kedua.png" alt="">
+                <img src="img/logo-peluang-kedua.jpeg"  width="250px" height="106px" alt="">
             </div>
             <img src="img/second-hope-crsl.jpg" alt="">
         </div>
