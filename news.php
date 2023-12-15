@@ -11,16 +11,16 @@ include 'component/header.php';
 
             <div class="details-container">
                 <div class="content">
-                    <h2>Kebaikan Menyertai Program Harapan Kedua</h2>
+                    <h2>Kebaikan Menyertai Program Peluang Kedua</h2>
                     <p>
-                        Program Harapan kedua menawarkan penyelesaian menyeluruh untuk individu yang telah disenaraihitamkan oleh Institusi Kewangan, membantu mereka membina kehidupan yang stabil melalui pengurusan kewangan yang berkesan.
+                        Program Peluang Kedua menawarkan penyelesaian menyeluruh untuk kakitangan Kerajaan Persekutuan & Negeri serta syarikat berkaitan dengan Kerajaan (GLC) terpilih yang telah disenaraihitam oleh Institusi Kewangan Malaysia. Secara tidak langsung, ia akan membantu mereka membina kehidupan yang lebih stabil melalui pengurusan kewangan yang berkesan.
                     </p>
 
                     <ul>
-                        <li>Bebas rekod / nama dari senaraihitam Institusi Kewangan dan syarikat kredit</li>
-                        <li>Pendapatan bersih (gaji bawa pulang) peserta program dijumlahkan bersama</li>
-                        <li>Memberi harapan kedua kepada peserta program untuk memohon pembiayaan baru dari Institusi Kewangan</li>
-                        <li>Peluang terbaik untuk meningkatkan kualiti hidup peserta program serta keluarga</li>
+                        <li>Bebas rekod / nama dari disenaraihitam oleh Institusi Kewangan dan syarikat kredit</li>
+                        <li>Pendapatan bersih (gaji bawa pulang) peserta program akan dijumlahkan Bersama</li>
+                        <li>Memberi peluang kedua kepada peserta program untuk memohon pembiayaan baru dari Institusi Kewangan</li>
+                        <li>Peluang terbaik untuk meningkatkan kualiti hidup peserta program bersama keluarga mereka</li>
                     </ul>
                 </div>
                 <img src="img/news-sect1-bg.png" alt="">
