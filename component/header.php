@@ -49,7 +49,7 @@
                         <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/index") ? "current-menu-item" : "" ?>"><a href="index">Utama</a></li>
                         <li class="menu-item with-child"><a href="#">Produk</a>
                             <ul class="sub-menu">
-                                <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/secondHope") ? "current-menu-item" : "" ?>"><a href="secondHope">Second Hope</a></li>
+                                <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/secondHope") ? "current-menu-item" : "" ?>"><a href="secondHope">Program Peluang Kedua</a></li>
                                 <li class="menu-item <?php echo ($_SERVER['REQUEST_URI'] == "/dmc-web/quickCash") ? "current-menu-item" : "" ?>"><a href="quickCash">Quick Cash</a></li>
                             </ul>
                         </li>
