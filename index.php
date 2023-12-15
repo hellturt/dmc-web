@@ -46,7 +46,7 @@ include 'component/header.php';
                 <h1>Produk Kami</h1>
                 <a href="secondHope">
                     <img src="img/caret-right.svg" alt="">
-                    Program Second Hope / Program Harapan Kedua
+                    Program Second Chance / Program Peluang Kedua
                 </a>
                 <a href="quickCash">
                     <img src="img/caret-right.svg" alt="">
@@ -73,7 +73,7 @@ include 'component/header.php';
                     <img src="img/caret-right.svg" alt="">
                 </a>
                 <a href="news" class='single-news' style="background-image: url('img/home-news-bg-3.jpg');">
-                    <p><span>Manfaat Menyertai</span> Program Second Hope</p>
+                    <p><span>Manfaat Menyertai</span> Program Peluang Kedua</p>
                     <img src="img/caret-right.svg" alt="">
                 </a>
             </div>
