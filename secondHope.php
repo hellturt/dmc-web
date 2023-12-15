@@ -15,12 +15,12 @@ include 'component/header.php';
 
         <div class='container'>
             <div class='content'>
-                <h1>Apa Itu Program Harapan Kedua</h1>
+                <h1>Apa Itu Program Peluang Kedua</h1>
                 <p>
-                    DMC FinCap telah memperkenalkan Program Harapan Kedua, yang bertujuan untuk membantu kakitangan kerajaan persekutuan, kerajaan negeri, dan syarikat berkaitan kerajaan (GLC) tertentu yang telah disenaraihitamkan oleh Institusi Kewangan Malaysia.
+                    DMC Fincap telah memperkenalkan Program Peluang Kedua yang bertujuan untuk membantu kakitangan Kerajaan persekutuan, Kerajaan negeri, dan syarikat berkaitan kerajaan (GLC) terpilih yang telah disenaraihitam oleh Institusi Kewangan Malaysia.
                 </p>
                 <br>
-                <h1>Harapan Kedua Yang Bermakna</h1>
+                <h1>Peluang Kedua Yang Bermakna</h1>
                 <p>
                     Melalui proses penyusunan semula pengurusan kewangan dengan teliti dan melunaskan pembiayaan yang disenaraihitamkan sebelum ini, individu yang menyertai program ini boleh memulihkan kelayakan mereka untuk bantuan kewangan daripada Institusi Kewangan. Ini memberi peluang yang sangat baik kepada mereka untuk memperbaiki kehidupan mereka dan kehidupan keluarga mereka.
                 </p>
@@ -36,7 +36,7 @@ include 'component/header.php';
 
     <section class='second-hope-content'>
         <div class='container'>
-            <h1>Bagaimana Program Harapan Kedua beroperasi?</h1>
+            <h1>Bagaimana Program Peluang Kedua beroperasi?</h1>
             <div class='steps-container'>
                 <div class='single-step'>
                     <div>01</div>
