@@ -1752,8 +1752,17 @@ a.btn-main.xl {
 	margin-bottom: 0;
 }
 
-.main-about section.header {
+.main-about section.video-section {
+	padding: 50px 0;
+	background-color: #ecf3f3;
 	margin-top: 90px;
+}
+
+.main-about section.video-section iframe {
+	height: 38vw;
+}
+
+.main-about section.header {
 	background-color: #F3B126;
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;

@@ -11,8 +11,18 @@
         }
     }
 
-    section.header {
+    section.video-section {
+        padding: 50px 0;
+        background-color: #ecf3f3;
         margin-top: 90px;
+
+        iframe {
+            height: 38vw;
+        }
+    }
+
+    section.header {
+
         background-color: #F3B126;
         display: grid;
         grid-template-columns: 1fr 1.5fr;

@@ -5,6 +5,12 @@ include 'component/header.php';
 ?>
 
 <main id="primary" class="site-main main-about">
+
+    <section class="video-section">
+        <div class="container">
+            <iframe width="100%" src="https://www.youtube.com/embed/MUYDF-RB2gw?si=9UqZTiK0Kr1gEeA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
     <section class="header">
         <div class="img-container">
             <img src="img/dmc-logo.png" alt="">
